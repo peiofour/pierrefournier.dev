@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { BsFillHeartFill } from "react-icons/bs"
 
 const MenuItems = [
   {
@@ -39,7 +40,11 @@ const Footer = () => {
         </ul>
         
         <div>
-          Made with love by Pierre
+          Made with{" "}
+          <span className="icon -love">
+            <BsFillHeartFill />
+          </span>
+          {" "} by Pierre
         </div>
       </div>
     </footer>

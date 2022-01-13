@@ -1,12 +1,10 @@
 import React from "react"
-import Header from "../components/header"
-import Footer from "../components/footer"
+import Layout from "../components/layout"
 
 // markup
 const IndexPage = () => {
   return (
-    <main>
-      <Header/>
+    <Layout className="index">
       <title>Home Page</title>
       <h1>
         Congratulations
@@ -16,8 +14,7 @@ const IndexPage = () => {
           🎉🎉🎉
         </span>
       </h1>
-      <Footer/>
-    </main>
+    </Layout>
   )
 }
 
