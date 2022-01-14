@@ -5,12 +5,13 @@ import Footer from './footer'
 import "../assets/scss/style.scss"
 
 
+
 const Layout = ({ children, className, props }) => {
 
   return (
     <div className="primary-container">
       <Header />
-      <main className={"container " + className}>
+      <main className={className}>
         { children }
       </main>
       <Footer />

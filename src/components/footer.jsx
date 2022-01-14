@@ -35,13 +35,13 @@ const Footer = () => {
   return (
     <footer className="site-footer">
       <div>
-        <ul>
+        <ul className="row">
           {listMenuItems}
         </ul>
         
         <div>
           Made with{" "}
-          <span className="icon -love">
+          <span>
             <BsFillHeartFill />
           </span>
           {" "} by Pierre

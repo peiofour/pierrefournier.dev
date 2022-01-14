@@ -23,14 +23,13 @@ const MenuItems = [
  * @param {String} to 
  * @param {String} children 
  */
-const ListLink = props => (
+const ListLink = ({children, to}) => (
   <li>
-    <Link to={props.to}>{props.children}</Link>
+    <Link to={to}>{children}</Link>
   </li>
 )
 
 const Header = () => {
-
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -46,15 +45,21 @@ const Header = () => {
   const listMenuItems = MenuItems.map((menuItem, i) => <ListLink key={i} to={menuItem.path}>{menuItem.title}</ListLink>)
 
   return (
-    <nav className="site-navigation">
-      <Link to={'/'} className='col-6'>
-        Pierre Fournier
-      </Link>
-
-      <ul>
-        {listMenuItems}
-      </ul>
-    </nav>
+    <header className="header">
+      <div className="site-header container">
+        <div className="site-header__title">
+          <Link to="/">
+            Pierre Fournier
+          </Link>
+        </div>
+        
+        <nav>
+          <ul className="site-header__menu-items">
+            {listMenuItems}
+          </ul>
+        </nav>
+      </div>
+    </header>
   )
 }
 
