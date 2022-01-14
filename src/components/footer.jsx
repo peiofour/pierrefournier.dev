@@ -30,15 +30,10 @@ const MenuItems = [
 
 const Footer = () => {
   
-  const listMenuItems = MenuItems.map((menuItem, i) => <ListLink to={menuItem.path} key={i}>{menuItem.title}</ListLink>)
 
   return (
-    <footer className="site-footer">
-      <div>
-        <ul className="row">
-          {listMenuItems}
-        </ul>
-        
+    <footer>
+      <div className="site-footer container">
         <div>
           Made with{" "}
           <span>

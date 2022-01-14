@@ -80,7 +80,10 @@
 }
 
 .site-footer {
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 :root {
@@ -124,4 +127,9 @@ body {
 
 header {
   padding-top: 20px;
+}
+
+footer {
+  padding-top: var(--size-300);
+  padding-bottom: var(--size-300);
 }
