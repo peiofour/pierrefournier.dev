@@ -86,6 +86,25 @@
   align-items: center;
 }
 
+.site-index {
+  display: flex;
+  flex-direction: row;
+
+  .flex-col{
+    padding: 15px;
+    width: 40%; 
+    margin: 0 15px 15px
+  }
+
+  &__content {
+    font-size: 20px;
+  }
+
+  &__image {
+    
+  }
+}
+
 :root {
   scroll-behavior: smooth;
   --size-300: 0.75rem;

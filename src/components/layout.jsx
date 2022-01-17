@@ -6,13 +6,16 @@ import "../assets/scss/style.scss"
 
 
 
-const Layout = ({ children, className, props }) => {
+const Layout = ({ children, className, title, props }) => {
 
   return (
     <div className="primary-container">
+      <title>{title}</title>
       <Header />
       <main className={className}>
-        { children }
+        <div className="container">
+          { children }
+        </div>
       </main>
       <Footer />
     </div>
