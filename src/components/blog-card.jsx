@@ -10,8 +10,6 @@ const BlogCard = ({ link, title, subtitle }) => {
         <StaticImage
           src="https://placekitten.com/800/600"
           alt="Moi"
-          width={345}
-          height={260}
         />
         <h2>
           {title}

@@ -4,16 +4,16 @@ import { BsFillHeartFill, BsCodeSlash } from "react-icons/bs"
 const Footer = () => (
   <footer>
     <div className="site-footer container">
-      <div>
-        <span>
+      <p>
+        <span className="icon">
           <BsCodeSlash />
         </span>
         {" "}with{" "}
-        <span>
+        <span className="icon">
           <BsFillHeartFill />
         </span>
         {" "} by Pierre
-      </div>
+      </p>
     </div>
   </footer>
 )

@@ -125,13 +125,17 @@
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0,0,0,.08);
+  box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   border-radius: 8px;
+  transition: box-shadow 0.3s linear;
+
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
   }
   a {
     text-decoration: none;
@@ -182,7 +186,11 @@
 
   &:hover {
     background-color: var(--color-hover);
+  }
 }
+
+.icon {
+  vertical-align: middle;
 }
 
 :root {
@@ -197,16 +205,8 @@
 
   --color-main: #37292C;
   --color-hover: #37292ca1;
-}
+  --background: #fff;
 
-body::-webkit-scrollbar {
-  width: 10px;
-}
-body::-webkit-scrollbar-thumb {
-background-color: rgba(55, 41, 44, .4);
-}
-body::-webkit-scrollbar-track {
-  background: transparent;
 }
 
 html {
@@ -222,8 +222,6 @@ body {
     helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   color: var(--color-main);
   background-attachment: fixed;
-  background-color: #d9e4f5;
-  background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
   min-height: 100vh;
   min-height: -webkit-fill-available;
   text-rendering: optimizeSpeed;
