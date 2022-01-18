@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import BlogCard from "../components/blog-card";
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import { RiInstagramFill, RiLinkedinFill, RiGithubFill } from "react-icons/ri"
@@ -44,6 +45,18 @@ const IndexPage = () => {
           />
         </div>
       </div>
+
+      <h2>Derniers posts</h2>
+
+      <ul className="card-list">
+        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
+        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
+        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
+        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
+        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
+        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
+        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
+      </ul>
     </Layout>
   )
 }
