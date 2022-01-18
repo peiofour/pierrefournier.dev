@@ -87,22 +87,57 @@
 }
 
 .site-index {
-  display: flex;
-  flex-direction: row;
-
-  .flex-col{
-    padding: 15px;
-    width: 40%; 
-    margin: 0 15px 15px
-  }
 
   &__content {
     font-size: 20px;
+
+    &--button {
+      margin-top: 30px;
+    }
+
+    &--social-icons {
+      margin-top: 40px;
+      display: flex;
+      font-size: 35px;
+      & a {
+        padding-right: 10px;
+        color: var(--color-main);
+      }
+
+      & a:hover {
+        color: var(--color-hover)
+      }
+    }
   }
 
   &__image {
-    
+
   }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col{
+  padding: 15px;
+  width: 45%; 
+  margin: 0 15px 15px
+}
+
+.button {
+  text-decoration: none;
+  background-color: var(--color-main);
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+
+  
+}
+
+.button:hover {
+    background-color: var(--color-hover);
 }
 
 :root {
@@ -114,6 +149,9 @@
   --size-700: 2.36rem;
   --size-800: 3.15rem;
   --size-900: 4.2rem;
+
+  --color-main: #37292C;
+  --color-hover: #37292ca1;
 }
 
 body::-webkit-scrollbar {
@@ -130,10 +168,14 @@ html {
   height: -webkit-fill-available;
 }
 
+img {
+  border-radius: 12px;
+}
+
 body {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
     helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  color: #37292C;
+  color: var(--color-main);
   background-attachment: fixed;
   background-color: #d9e4f5;
   background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
