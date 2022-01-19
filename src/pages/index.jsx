@@ -17,7 +17,15 @@ const IndexPage = () => {
   return (
     <Layout title="Le blog de Pierre">
       <div className="site-index flex-row">
-        <div className="site-index__content flex-col">
+        <div className="site-index__image">
+          <StaticImage
+            src="https://placekitten.com/800/600"
+            alt="Moi"
+            width="350"
+            height="350"
+          />
+        </div>
+        <div className="site-index__content">
           <h1>{content.title}</h1>
           <p>{content.text}</p>
           <div className="site-index__content--button">
@@ -35,14 +43,6 @@ const IndexPage = () => {
               <RiGithubFill />
             </Link>
           </div>
-        </div>
-        <div className="site-index__image flex-col">
-          <StaticImage
-            src="https://placekitten.com/800/600"
-            alt="Moi"
-            width={800}
-            height={600}
-          />
         </div>
       </div>
 

@@ -2,40 +2,30 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  & main {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  & footer {
-    margin-top: auto;
-  }
+  
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
   max-width: 1300px;
-  padding-left: var(--size-700);
-  padding-right: var(--size-700);
+  padding-left: 15px;
+  padding-right: 15px;
   height: 100%;
-  @media screen and (max-width: 1000px) {
-    & {
-      padding-left: var(--size-400);
-      padding-right: var(--size-400);
-    }
-  }
 }
 
 .site-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #fff;
 
   &__title {
     & a {
       text-transform: uppercase;
       text-decoration: none;
       font-size: var(--size-500);
+      font-weight: bold;
       color: inherit;
     }
   }
@@ -65,10 +55,8 @@
       }
       & a {
         color: inherit;
-        text-transform: uppercase;
-        font-size: var(--size-300);
+        font-size: var(--size-400);
         text-decoration: none;
-        letter-spacing: 0.1rem;
       }
       @media screen and (max-width: 700px) {
         & a {
@@ -87,9 +75,28 @@
 }
 
 .site-index {
-  margin-top: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  @media screen and (max-width: 1000px){
+    flex-direction: column !important;
+  }
+
   &__content {
     font-size: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 55%; 
+    margin: 0;
+
+    @media screen and (max-width: 1000px){
+      text-align: center;
+      padding-right: 20px;
+      width: 100%;
+    }
 
     &--button {
       margin-top: 30px;
@@ -97,20 +104,36 @@
 
     &--social-icons {
       margin-top: 40px;
-      display: flex;
       font-size: 35px;
+      @media only screen and (max-width: 1000px){
+        text-align: center;
+      }
       & a {
         padding-right: 10px;
-        color: var(--color-main);
+        color: var(--background-header);
         &:hover {
           color: var(--color-hover)
         }
+        transition: color 0.2s linear;
       }
+    }
+  }
 
+  &__image {
+    padding-top: 10px;
+    margin: 0;
+
+    img {
+      border-radius: 50% !important;
     }
   }
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 .card-list {
   list-style: none;
@@ -118,6 +141,7 @@
   display: grid;
   grid-gap: var(--size-600);
   grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
+  padding: 0;
 }
 
 .card {
@@ -166,27 +190,21 @@
   }
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
 
-.flex-col{
-  padding: 15px;
-  width: 45%; 
-  margin: 0 15px 15px
-}
+
+
 
 .button {
   text-decoration: none;
-  background-color: var(--color-main);
-  color: white;
+  background-color: var(--background-header);
+  color: var(--background);
   padding: 15px;
   border-radius: 12px;
 
   &:hover {
     background-color: var(--color-hover);
   }
+  transition: background-color 0.2s linear;
 }
 
 .icon {
@@ -203,9 +221,12 @@
   --size-800: 3.15rem;
   --size-900: 4.2rem;
 
-  --color-main: #37292C;
-  --color-hover: #37292ca1;
+  //--color-main: #37292C;
+  //--color-hover: #37292ca1;
+  --color-main: #000000;
+  --color-hover: #000000a1;
   --background: #fff;
+  --background-header: #0a3d62;
 
 }
 
@@ -221,16 +242,17 @@ body {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
     helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   color: var(--color-main);
-  background-attachment: fixed;
   min-height: 100vh;
   min-height: -webkit-fill-available;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-
+  margin: 0;
 }
 
 header {
-  padding-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--background-header);
 }
 
 footer {
