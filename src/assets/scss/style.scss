@@ -1,3 +1,6 @@
+@import url(//db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold);
+@import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+
 .primary-container {
   min-height: 100vh;
   display: flex;
@@ -18,14 +21,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
+  font-family: 'Circular Std Bold', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
+  helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif !important; 
 
   &__title {
     & a {
-      text-transform: uppercase;
       text-decoration: none;
-      font-size: var(--size-500);
-      font-weight: bold;
+      font-size: var(--size-700);
+      font-weight: bolder;
       color: inherit;
     }
   }
@@ -48,7 +51,7 @@
       &:not(:last-of-type) {
         margin-right: 2rem;
       }
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 1000px) {
         &:not(:last-of-type) {
           margin-right: 1rem;
         }
@@ -58,7 +61,7 @@
         font-size: var(--size-400);
         text-decoration: none;
       }
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 1000px) {
         & a {
           font-size: 0.7rem;
         }
@@ -72,6 +75,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  bottom: 0;
 }
 
 .site-index {
@@ -110,7 +114,7 @@
       }
       & a {
         padding-right: 10px;
-        color: var(--background-header);
+        color: var(--text-light);
         &:hover {
           color: var(--color-hover)
         }
@@ -133,6 +137,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.site-about {
+  text-align: center;
+
 }
 
 .card-list {
@@ -196,7 +205,7 @@
 
 .button {
   text-decoration: none;
-  background-color: var(--background-header);
+  background-color: var(--color-button);
   color: var(--background);
   padding: 15px;
   border-radius: 12px;
@@ -224,10 +233,16 @@
   //--color-main: #37292C;
   //--color-hover: #37292ca1;
   --color-main: #000000;
-  --color-hover: #000000a1;
   --background: #fff;
-  --background-header: #0a3d62;
+  
+  --background-dark: #082032;
+  --background-light: #edf6f9;
 
+  --text-dark: #e6e6e6;
+  --text-light: #333;
+  
+  --color-button: #ff1e56;
+  --color-hover: #ff1e56a1;
 }
 
 html {
@@ -238,21 +253,28 @@ img {
   border-radius: 12px;
 }
 
+
+
 body {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
+  font-family: 'Circular Std Book', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
     helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  color: var(--color-main);
+  color: var(--text-light);
+  background-color: var(--background-light);
   min-height: 100vh;
   min-height: -webkit-fill-available;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  margin: 0;
+  margin: 0; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Circular Std Bold', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
+  helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif !important; 
 }
 
 header {
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: var(--background-header);
 }
 
 footer {

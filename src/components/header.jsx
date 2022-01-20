@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -30,6 +30,9 @@ const ListLink = ({children, to}) => (
 )
 
 const Header = () => {
+
+  const [dark, setDark] = useState(true);
+
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -49,7 +52,7 @@ const Header = () => {
       <div className="site-header container">
         <div className="site-header__title">
           <Link to="/">
-            Pierre Fournier
+            pierre
           </Link>
         </div>
         
