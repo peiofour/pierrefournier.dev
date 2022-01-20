@@ -19,7 +19,7 @@ const IndexPage = () => {
       <div className="site-index flex-row">
         <div className="site-index__image">
           <StaticImage
-            src="https://placekitten.com/800/600"
+            src="https://media-exp1.licdn.com/dms/image/C4D03AQE1VW3HWTPxWA/profile-displayphoto-shrink_800_800/0/1636909960904?e=1648080000&v=beta&t=jFu5FHHjifKeyrrcYMcGWz6nDqxPZDFOCrpN5NbhfTU"
             alt="Moi"
             width="350"
             height="350"
@@ -49,13 +49,7 @@ const IndexPage = () => {
       <h2>Derniers posts</h2>
 
       <ul className="card-list">
-        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
-        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
-        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
-        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
-        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
-        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
-        <BlogCard title="Test 1" subtitle="lorem ipsum mes " link="/" />
+        
       </ul>
     </Layout>
   )

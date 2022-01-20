@@ -5,7 +5,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
+  position: relative;
 }
 
 .container {
@@ -75,7 +75,15 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+footer {
+  padding-top: var(--size-300);
+  padding-bottom: var(--size-300);
+  position: absolute;
   bottom: 0;
+  clear: both;
+  width: 100%;
 }
 
 .site-index {
@@ -141,7 +149,6 @@
 
 .site-about {
   text-align: center;
-
 }
 
 .card-list {
@@ -277,7 +284,4 @@ header {
   padding-bottom: 15px;
 }
 
-footer {
-  padding-top: var(--size-300);
-  padding-bottom: var(--size-300);
-}
+
