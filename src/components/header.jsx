@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
-import { useStaticQuery, graphql } from 'gatsby'
-
+import { Link, useStaticQuery, graphql  } from 'gatsby'
+import { BsList, BsListNested } from 'react-icons/bs'
 
 const MenuItems = [
   {
@@ -28,10 +27,12 @@ const ListLink = ({children, to}) => (
     <Link to={to}>{children}</Link>
   </li>
 )
+const listMenuItems = MenuItems.map((menuItem, i) => <ListLink key={i} to={menuItem.path}>{menuItem.title}</ListLink>)
 
 const Header = () => {
 
   const [dark, setDark] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
 
   const { site } = useStaticQuery(
     graphql`
@@ -45,8 +46,6 @@ const Header = () => {
     `
   )
 
-  const listMenuItems = MenuItems.map((menuItem, i) => <ListLink key={i} to={menuItem.path}>{menuItem.title}</ListLink>)
-
   return (
     <header className="header">
       <div className="site-header container">
@@ -57,7 +56,18 @@ const Header = () => {
         </div>
         
         <nav>
-          <ul className="site-header__menu-items">
+          <button
+            className="menu-icon"
+            onClick={() => setShowMenu(!showMenu)}  
+          >
+            {
+              showMenu ?
+              <BsListNested />
+              :
+              <BsList />
+            }
+          </button>
+          <ul className={showMenu ? "menu-show" : "menu-close"}>
             {listMenuItems}
           </ul>
         </nav>
