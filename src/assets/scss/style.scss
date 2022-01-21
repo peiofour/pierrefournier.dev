@@ -72,12 +72,18 @@
       right: 0;
       top: 50px;
       z-index: 1;
-      width: 80px;
-      height: 80px;
+      max-height: 320px;
       overflow: hidden;
+      border-radius: 0 0 0 12px;
+      a {
+        padding: 20px;
+        display: block;
+      }
       li {
-        text-align: end;
-        margin-right: 1em !important;
+        display: block;
+        margin-left: 0;
+        margin-right: 10px;
+        text-align: start;
       }
     }
 
