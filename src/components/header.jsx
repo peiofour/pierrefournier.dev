@@ -5,16 +5,16 @@ import { BsList, BsListNested } from 'react-icons/bs'
 const MenuItems = [
   {
     path: "/",
-    title: "Home"
+    title: "Blog"
   },
   {
     path: "/about",
-    title: "About"
+    title: "À propos"
   },
-  {
-    path: "/contact",
-    title: "Contact"
-  },
+  // {
+  //   path: "/contact",
+  //   title: "Contact"
+  // },
 ]
 
 /**

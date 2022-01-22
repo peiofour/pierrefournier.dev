@@ -8,7 +8,7 @@ import { RiInstagramFill, RiLinkedinFill, RiGithubFill } from "react-icons/ri"
 
 const content = {
   title: "Salut, moi c'est Pierre.",
-  text: "Je suis développeur, je vis à Toulouse dans le sud de la France. Ici je post des articles de blog sur la tech, les startups, le numérique en France et dans le monde, et sur bien d'autres sujets.",
+  text: "Je suis développeur, je vis à Toulouse dans le sud de la France. Ici je poste des articles de blog sur la tech, les startups, le numérique en France et dans le monde, et sur bien d'autres sujets.",
   more: "En savoir plus"
 }
 
