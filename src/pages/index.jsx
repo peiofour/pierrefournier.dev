@@ -23,6 +23,8 @@ const IndexPage = () => {
             alt="Moi"
             width="350"
             height="350"
+            loading="lazy"
+            style={{borderRadius: '50%'}}
           />
         </div>
         <div className="site-index__content">
