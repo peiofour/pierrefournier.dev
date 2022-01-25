@@ -3,7 +3,7 @@ import { BsFillHeartFill, BsCodeSlash } from "react-icons/bs"
 
 const Footer = () => (
   <footer>
-    <div className="site-footer container">
+    <div className="site-footer">
       <p>
         <span className="icon">
           <BsCodeSlash />

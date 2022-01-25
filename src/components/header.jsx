@@ -48,7 +48,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="site-header container">
+      <div className="site-header">
         <div className="site-header__title">
           <Link to="/">
             pierre
