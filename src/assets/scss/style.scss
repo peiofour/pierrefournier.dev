@@ -177,6 +177,13 @@ footer {
   &__image {
     padding-top: 10px;
     margin: 0;
+    border-radius: 50%;
+    div {
+      border-radius: 50%;
+    }
+    img {
+      border-radius: 50%;
+    }
   }
 }
 
