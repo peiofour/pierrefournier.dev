@@ -8,7 +8,7 @@ Je m'appelle __Pierre Fournier__.
 
 Je suis __développeur__.
 
-![DJ Snake - J'ai une histoire, j'ai un background.](/static/djsnake-bb615158f7ebfc848195fd9b7b095609.jpeg)
+![DJ Snake - J'ai une histoire, j'ai un background.](https://res.cloudinary.com/pierrefournier-dev/image/upload/v1643112597/about/djsnake_d6vk8p.jpg)
 
 J'ai __24 ans__, j'habite à __Toulouse__, dans le sud de la France, je suis originaire du Pays Basque.
 
