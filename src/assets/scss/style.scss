@@ -1,5 +1,5 @@
-@import url(//db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold);
-@import url(//db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
+@import url(https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold);
+@import url(https://db.onlinewebfonts.com/c/860c3ec7bbc5da3e97233ccecafe512e?family=Circular+Std+Book);
 
 .primary-container {
   min-height: 100vh;
@@ -22,8 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Circular Std Bold', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
-  helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif !important;
+  font-family: 'Circular Std Bold';
   padding-left: 15px;
   padding-right: 15px;
 
@@ -319,8 +318,7 @@ img {
 
 
 body {
-  font-family: 'Circular Std Book', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
-    helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family: 'Circular Std Book';
   color: var(--text-light);
   background-color: var(--background-light);
   min-height: 100vh;
@@ -331,8 +329,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Circular Std Bold', -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue,
-  helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif !important; 
+  font-family: 'Circular Std Bold'; 
 }
 
 header {
