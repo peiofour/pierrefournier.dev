@@ -18,6 +18,8 @@ Sur ce site qui me sert également de blog, je partage sur mes passions, je les 
 
 J'ai codé quelques projets perso que vous pouvez retrouver sur [mon Github](https://github.com/peiofour).
 
+Mon CV est disponible [juste ici](https://drive.google.com/file/d/1skJunP9D3JKB_3p5v9j9MPze-sudL-vq/view?usp=sharing).
+
 Vous pouvez me trouver sur [LinkedIn](https://linkedin.com/in/pierrefournier1). 
 
 Vous pouvez m'envoyer un email à <pierre.fournier@protonmail.com> ou m'envoyer un message sur [Telegram](https://t.me/superbasque).
