@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import BlogCard from "../components/blog-card";
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
-import { RiInstagramFill, RiLinkedinFill, RiGithubFill } from "react-icons/ri"
+import { RiInstagramFill, RiLinkedinFill, RiGithubFill, RiTelegramFill } from "react-icons/ri"
 
 
 const content = {
@@ -35,14 +35,17 @@ const IndexPage = () => {
           </div>
           
           <div className="site-index__content--social-icons">
-            <Link to="https://www.instagram.com/pierref0urn1er" >
+            <Link to="https://www.instagram.com/pierref0urn1er" target="_blank">
               <RiInstagramFill />
             </Link>
-            <Link to="https://www.linkedin.com/in/pierrefournier1">
+            <Link to="https://www.linkedin.com/in/pierrefournier1" target="_blank">
               <RiLinkedinFill />
             </Link>
-            <Link to="https://github.com/peiofour">
+            <Link to="https://github.com/peiofour" target="_blank">
               <RiGithubFill />
+            </Link>
+            <Link to="https://t.me/superbasque" target="_blank">
+              <RiTelegramFill />
             </Link>
           </div>
         </div>
