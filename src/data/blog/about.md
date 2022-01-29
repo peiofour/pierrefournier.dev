@@ -14,7 +14,7 @@ J'ai __24 ans__, j'habite à __Toulouse__, dans le sud de la France, je suis ori
 
 Je suis passionné par de nombreux sujets, notamment la photographie, la tech, le cinéma, le sport, la politique, l'histoire et l'astronomie. 
 
-Sur ce site qui me sert également de blog, je partage sur mes passions, je les fait interagir entre elles. J'écris également sur mes projets, ainsi que sur mes voyages. Je développerai plus tard une partie portofolio pour présenter mes créations.
+Sur ce site qui me sert également de blog, je partage sur mes passions, je les fais interagir entre elles. J'écris également sur mes projets, ainsi que sur mes voyages. Je développerai plus tard une partie portofolio pour présenter mes créations.
 
 J'ai codé quelques projets perso que vous pouvez retrouver sur [mon Github](https://github.com/peiofour).
 

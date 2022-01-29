@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import BlogCard from "../components/blog-card";
+// import BlogCard from "../components/blog-card";
 import { Link } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import { RiInstagramFill, RiLinkedinFill, RiGithubFill, RiTelegramFill } from "react-icons/ri"
