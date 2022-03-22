@@ -7,10 +7,10 @@ import "../assets/scss/style.scss"
 
 
 const Layout = ({ children, className, title, props }) => {
-
+  const lastTitle = title === undefined ? "Le blog de Pierre" : `Le blog de Pierre - ${title}`
   return (
     <div className="primary-container">
-      <title>{title}</title>
+      <title>{lastTitle}</title>
       <Header />
       <main className={className}>
         <div className="container">

@@ -31,7 +31,6 @@ const listMenuItems = MenuItems.map((menuItem, i) => <ListLink key={i} to={menuI
 
 const Header = () => {
 
-  const [dark, setDark] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
 
   const { site } = useStaticQuery(

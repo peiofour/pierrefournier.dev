@@ -191,7 +191,7 @@ footer {
   align-items: center;
 }
 
-.site-about {
+.post {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -199,7 +199,16 @@ footer {
   word-wrap: break-word;
   font-size: 20px;
 
+  img {
+    width: 80vw;
+    max-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+}
 
+.site-about {
   img {
     width: 80vw;
     max-width: 600px;
@@ -228,7 +237,7 @@ footer {
   backdrop-filter: blur(10px);
   border-radius: 8px;
   transition: box-shadow 0.3s linear;
-
+  max-width: 50ch;
 
   &:hover {
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -251,10 +260,8 @@ footer {
     line-height: 1.2;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    text-transform: capitalize;
     font-size: var(--size-600);
     font-weight: 700;
-    
   }
 
   p {

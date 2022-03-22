@@ -1,10 +1,29 @@
 import React from "react"
 import Layout from "../components/layout"
-// import BlogCard from "../components/blog-card";
-import { Link } from 'gatsby'
+import BlogCard from "../components/blog-card";
+import { Link, graphql } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import { RiInstagramFill, RiLinkedinFill, RiGithubFill, RiTelegramFill } from "react-icons/ri"
 
+export const pageQuery = graphql`
+query {
+  allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog"}}}) {
+    edges {
+      node {
+        frontmatter {
+          title
+          subtitle
+          date
+          headimage
+          slug
+        }
+        id
+      }
+    }
+    totalCount
+  }
+}
+`
 
 const content = {
   title: "Salut, moi c'est Pierre.",
@@ -13,9 +32,11 @@ const content = {
 }
 
 // markup
-const IndexPage = () => {
+const IndexPage = ({ data: { allMarkdownRemark }}) => {
+
+  console.log(allMarkdownRemark.edges[0].node.frontmatter)
   return (
-    <Layout title="Le blog de Pierre">
+    <Layout>
       <div className="site-index flex-row">
         <div className="site-index__image">
           <StaticImage
@@ -54,6 +75,17 @@ const IndexPage = () => {
       <h2>Derniers posts</h2>
 
       <ul className="card-list">
+        {
+          allMarkdownRemark.edges.map((edge) =>
+            <BlogCard
+              title={edge.node.frontmatter.title}
+              subtitle={edge.node.frontmatter.subtitle}
+              date={edge.node.frontmatter.date}
+              image={edge.node.frontmatter.headimage}
+              link={`blog/${edge.node.frontmatter.slug}`}
+            />
+          )
+        }
         
       </ul>
     </Layout>

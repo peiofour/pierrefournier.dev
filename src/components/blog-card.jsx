@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { StaticImage } from "gatsby-plugin-image"
 
-const BlogCard = ({ link, title, subtitle }) => {
-
+const BlogCard = ({ link, title, subtitle, image }) => {
+  console.log(image)
   return (
     <li className="card">
       <Link to={link}>
-        <StaticImage
-          src="https://placekitten.com/800/600"
-          alt="Moi"
+        <img
+          src={image}
+          alt={title}
+          width="100%"          
         />
         <h2>
           {title}
