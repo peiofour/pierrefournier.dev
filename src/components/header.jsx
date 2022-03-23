@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useStaticQuery, graphql  } from 'gatsby'
+import { Link, /* useStaticQuery, graphql */  } from 'gatsby'
 import { BsList, BsListNested } from 'react-icons/bs'
 
 const MenuItems = [
@@ -33,7 +33,7 @@ const Header = () => {
 
   const [showMenu, setShowMenu] = useState(false);
 
-  const { site } = useStaticQuery(
+  /* const { site } = useStaticQuery(
     graphql`
       query {
         site {
@@ -43,7 +43,7 @@ const Header = () => {
         }
       }
     `
-  )
+  ) */
 
   return (
     <header className="header">
