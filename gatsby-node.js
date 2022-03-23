@@ -11,6 +11,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       subtitle: String!
       date: Date!
       type: String!
+      slug: String!
       keywords: [String!]!
       headimage: String!
     }
