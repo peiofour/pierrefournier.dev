@@ -45,7 +45,6 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   const posts = result.data.allMarkdownRemark.edges
-  console.log("Slug : ", posts[0].node.id)
 
   posts.forEach(edge => {
     createPage({
