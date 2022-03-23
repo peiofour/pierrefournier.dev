@@ -5,6 +5,19 @@ module.exports = {
     description: `Site et blog de Pierre Fournier. Je partage sur mes passions, je les fait intéragir entre elles. J'écris également sur mes projets, ainsi que sur mes voyages.`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Le blog de Pierre`,
+        short_name: `Le blog de Pierre`,
+        start_url: `/`,
+        description: `Site et blog de Pierre Fournier. Je partage sur mes passions, je les fait intéragir entre elles. J'écris également sur mes projets, ainsi que sur mes voyages.`,
+        background_color: `#edf6f9`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/icon.png`
+      },
+    },
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",

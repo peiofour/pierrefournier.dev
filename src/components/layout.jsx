@@ -7,7 +7,7 @@ import "../assets/scss/style.scss"
 
 
 const Layout = ({ children, className, title, props }) => {
-  const lastTitle = title === undefined ? "Le blog de Pierre" : `Le blog de Pierre - ${title}`
+  const lastTitle = title === undefined ? "Le blog de Pierre" : `${title} - Le blog de Pierre`
   return (
     <div className="primary-container">
       <title>{lastTitle}</title>
