@@ -7,7 +7,7 @@ import { RiInstagramFill, RiLinkedinFill, RiGithubFill, RiTelegramFill } from "r
 
 export const pageQuery = graphql`
 query {
-  allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog"}}}) {
+  allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog"}}}, sort: {fields: frontmatter___date}) {
     edges {
       node {
         frontmatter {

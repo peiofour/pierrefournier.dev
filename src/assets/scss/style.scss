@@ -268,6 +268,10 @@ footer {
     margin-top: auto;
     font-size: var(--size-400);
   }
+  img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+  }
 }
 
 

@@ -9,7 +9,7 @@ const BlogCard = ({ link, title, subtitle, image }) => {
         <img
           src={image}
           alt={title}
-          width="100%"          
+          width="100%"
         />
         <h2>
           {title}
