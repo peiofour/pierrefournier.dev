@@ -33,8 +33,6 @@ const content = {
 
 // markup
 const IndexPage = ({ data: { allMarkdownRemark }}) => {
-
-  console.log(allMarkdownRemark.edges[0].node.frontmatter)
   return (
     <Layout>
       <div className="site-index flex-row">
