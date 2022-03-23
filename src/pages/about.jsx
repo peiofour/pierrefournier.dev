@@ -14,7 +14,7 @@ const AboutPage = ({ data: { markdownRemark }}) => {
   const { html } = markdownRemark;
   return (
     <Layout title="À propos">
-      <div className="post" dangerouslySetInnerHTML={{__html: html}} />
+      <div className="post site-about" dangerouslySetInnerHTML={{__html: html}} />
     </Layout>
   )
 }
