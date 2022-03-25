@@ -38,7 +38,7 @@ const IndexPage = ({ data: { allMarkdownRemark }}) => {
       <div className="site-index flex-row">
         <div className="site-index__image">
           <StaticImage
-            src="https://media-exp1.licdn.com/dms/image/C4D03AQE1VW3HWTPxWA/profile-displayphoto-shrink_800_800/0/1636909960904?e=1648080000&v=beta&t=jFu5FHHjifKeyrrcYMcGWz6nDqxPZDFOCrpN5NbhfTU"
+            src="https://res.cloudinary.com/pierrefournier-dev/image/upload/v1648208768/about/DSCF7848_nobjf9.jpg"
             alt="Moi"
             width="350"
             height="350"
