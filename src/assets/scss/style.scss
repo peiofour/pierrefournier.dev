@@ -197,14 +197,16 @@ footer {
   max-width: 70ch;
   word-wrap: break-word;
   font-size: 20px;
+  padding-bottom: 30px;
 
   img {
-    width: 80vw;
     max-width: 100%;
     margin-top: 15px;
-    margin-bottom: 15px;
+    width: 100%;
   }
-  
+   em {
+     margin-top: 0 !important;
+   }
 }
 
 .site-about {

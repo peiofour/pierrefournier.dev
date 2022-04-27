@@ -54,7 +54,7 @@ const IndexPage = ({ data: { allMarkdownRemark }}) => {
           </div>
           
           <div className="site-index__content--social-icons">
-            <Link to="https://www.instagram.com/pierref0urn1er" target="_blank">
+            <Link to="https://www.instagram.com/pierrefournier__" target="_blank">
               <RiInstagramFill />
             </Link>
             <Link to="https://www.linkedin.com/in/pierrefournier1" target="_blank">

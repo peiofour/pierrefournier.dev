@@ -6,6 +6,32 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ['/404'],
+        query: `
+        {
+          site{
+            siteMetadata {
+              siteUrl
+            }
+          }
+
+          allSitePage {
+            edges {
+              node {
+                path
+                context {
+                  isCanonical
+                }
+              }
+            }
+          }
+        }
+        `
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Le blog de Pierre`,
@@ -56,6 +82,14 @@ module.exports = {
           exclude: [],
         },
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.pierrefournier.dev',
+        sitemap: 'https://www.pierrefournier.dev/sitemap.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
     }
   ],
 };

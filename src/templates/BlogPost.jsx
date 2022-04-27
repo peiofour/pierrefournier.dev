@@ -9,7 +9,9 @@ export const query = graphql`
       frontmatter {
         date
         title
+        subtitle
         headimage
+        headimagedescription
       }
     }
   }
@@ -23,7 +25,10 @@ const BlogPost = ({ data }) => {
   return (
     <Layout className="post" title={data.markdownRemark.frontmatter.title}>
       <img src={data.markdownRemark.frontmatter.headimage} alt={data.markdownRemark.frontmatter.title}/>
+      <em>{data.markdownRemark.frontmatter.headimagedescription}</em>
+      <h1>{data.markdownRemark.frontmatter.title}</h1>
       <h5>{clearDate}</h5>
+      <h3>{data.markdownRemark.frontmatter.subtitle}</h3>
       <div dangerouslySetInnerHTML={{__html: data.markdownRemark.html}} />
     </Layout>
   )
