@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Le blog de Pierre",
     siteUrl: `https://www.pierrefournier.dev`,
-    description: `Site et blog de Pierre Fournier. Je partage sur mes passions, je les fait intéragir entre elles. J'écris également sur mes projets, ainsi que sur mes voyages.`,
+    description: `Blog de Pierre Fournier. Je partage sur mes passions, sur mes projets, ainsi que sur mes voyages.`,
   },
   plugins: [
     {

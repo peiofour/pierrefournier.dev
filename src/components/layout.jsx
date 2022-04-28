@@ -1,10 +1,7 @@
 import React from 'react'
-import Header from './header'
-import Footer from './footer'
-
+import Header from './Header'
+import Footer from './Footer'
 import "../assets/scss/style.scss"
-
-
 
 const Layout = ({ children, className, title, props }) => {
   const lastTitle = title === undefined ? "Le blog de Pierre" : `${title} - Le blog de Pierre`

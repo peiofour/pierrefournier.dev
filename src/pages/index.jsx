@@ -1,6 +1,6 @@
 import React from "react"
-import Layout from "../components/layout"
-import BlogCard from "../components/blog-card";
+import Layout from "../components/Layout"
+import BlogCard from "../components/BlogCard";
 import { Link, graphql } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import { RiInstagramFill, RiLinkedinFill, RiGithubFill, RiTelegramFill } from "react-icons/ri"
@@ -12,9 +12,10 @@ query {
       node {
         frontmatter {
           title
-          subtitle
+          description
           date
-          headimage
+          image
+          imagedescription
           slug
         }
         id
@@ -77,9 +78,9 @@ const IndexPage = ({ data: { allMarkdownRemark }}) => {
           allMarkdownRemark.edges.map((edge) =>
             <BlogCard
               title={edge.node.frontmatter.title}
-              subtitle={edge.node.frontmatter.subtitle}
+              subtitle={edge.node.frontmatter.description}
               date={edge.node.frontmatter.date}
-              image={edge.node.frontmatter.headimage}
+              image={edge.node.frontmatter.image}
               link={`blog/${edge.node.frontmatter.slug}`}
             />
           )

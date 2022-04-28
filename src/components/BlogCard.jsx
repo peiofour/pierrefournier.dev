@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-const BlogCard = ({ link, title, subtitle, image }) => {
+const BlogCard = ({ link, title, description, image }) => {
   console.log(image)
   return (
     <li className="card">
@@ -15,7 +15,7 @@ const BlogCard = ({ link, title, subtitle, image }) => {
           {title}
         </h2>
         <p>
-          {subtitle}
+          {description}
         </p>
       </Link>
     </li>
