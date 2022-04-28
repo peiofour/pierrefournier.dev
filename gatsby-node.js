@@ -8,12 +8,13 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
     type Frontmatter {
       title: String!
-      subtitle: String!
+      description: String!
       date: Date!
       type: String!
       slug: String!
       keywords: [String!]!
-      headimage: String!
+      image: String!
+      imagedescription: String!
     }
   `
   createTypes(typeDefs)

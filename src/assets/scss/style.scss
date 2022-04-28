@@ -197,14 +197,16 @@ footer {
   max-width: 70ch;
   word-wrap: break-word;
   font-size: 20px;
+  padding-bottom: 30px;
 
   img {
-    width: 80vw;
     max-width: 100%;
     margin-top: 15px;
-    margin-bottom: 15px;
+    width: 100%;
   }
-  
+   em {
+     margin-top: 0 !important;
+   }
 }
 
 .site-about {
@@ -292,6 +294,48 @@ footer {
   transition: background-color 0.2s linear;
 }
 
+.share-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  .share-button {
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    color: var(--background);
+    padding: 10px;
+    display: flex;
+    h5{
+      margin: 0;
+      padding-top: 5px;
+      padding-left: 3px;
+    }
+  }
+  .twitter {
+    background-color: var(--color-twitter);
+  }
+  .facebook {
+    background-color: var(--color-facebook);
+  }
+  .telegram {
+    background-color: var(--color-telegram);
+  }
+  .messenger {
+    background-color: var(--color-messenger);
+  }
+  .linkedin {
+    background-color: var(--color-linkedin);
+  }
+  .whatsapp {
+    background-color: var(--color-whatsapp);
+  }
+  .share {
+    background-color: var(--color-share);
+  }
+}
+
 .icon {
   vertical-align: middle;
 }
@@ -319,6 +363,14 @@ footer {
   
   --color-button: #ff1e56;
   --color-hover: #ff1e56a1;
+
+  --color-twitter: #1da1f2;
+  --color-facebook: #1877f2;
+  --color-telegram: #0088cc;
+  --color-linkedin: #0a66c2;
+  --color-whatsapp: #25d366;
+  --color-messenger: #3b5998;
+  --color-share: #a6b1b7;
 }
 
 html {
@@ -331,7 +383,7 @@ img {
 
 
 body {
-  font-family: 'Circular Std Book';
+  font-family: 'Circular Std Book' !important;
   color: var(--text-light);
   background-color: var(--background-light);
   min-height: 100vh;
@@ -342,7 +394,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Circular Std Bold'; 
+  font-family: 'Circular Std Bold' !important; 
 }
 
 header {
