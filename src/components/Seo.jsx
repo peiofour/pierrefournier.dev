@@ -20,7 +20,7 @@ const Seo = ({title, description, image, keywords, author, url}) => {
         },
         {
           property: `og:type`,
-          content: `website`
+          content: `article`
         },
         {
           property: `og:image`,
@@ -31,25 +31,34 @@ const Seo = ({title, description, image, keywords, author, url}) => {
           content: url
         },
         {
-          property: `twitter:card`,
+          property: `og:site_name`,
+          content: `Le blog de Pierre`
+        },
+        {
+          name: `twitter:card`,
           content: `summary_large_image`
         },
         {
-          property: `twitter:creator`,
+          name: `twitter:creator`,
           content: author
         },
         {
-          property: `twitter:title`,
+          name: `twitter:title`,
           content: title
         },
         {
-          property: `twitter:description`,
+          name: `twitter:description`,
           content: description
         },
         {
-          property: `twitter:image`,
+          name: `twitter:image`,
           content: image
         },
+        {
+          name: `twitter:site`,
+          content: `@_PierreFournier`
+        },
+
       ].concat(
         keywords && keywords.length > 0 ? {
           name: `keywords`,
