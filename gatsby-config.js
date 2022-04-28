@@ -8,7 +8,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: ['/404'],
         query: `
         {
           site{
