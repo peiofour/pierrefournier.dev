@@ -5,31 +5,7 @@ module.exports = {
     description: `Blog de Pierre Fournier. Je partage sur mes passions, sur mes projets, ainsi que sur mes voyages.`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-sitemap`,
-      options: {
-        query: `
-        {
-          site{
-            siteMetadata {
-              siteUrl
-            }
-          }
-
-          allSitePage {
-            edges {
-              node {
-                path
-                context {
-                  isCanonical
-                }
-              }
-            }
-          }
-        }
-        `
-      }
-    },
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
