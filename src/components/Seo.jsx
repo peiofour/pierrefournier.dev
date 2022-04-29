@@ -1,10 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const Seo = ({title, description, image, keywords, author, url}) => {        
+const Seo = ({title, description, image, keywords}) => {        
   return (
     <Helmet
       title={title}
+      titleTemplate={title}
       meta={[
         {
           name: `description`,
@@ -20,15 +21,11 @@ const Seo = ({title, description, image, keywords, author, url}) => {
         },
         {
           property: `og:type`,
-          content: `article`
+          content: `website`
         },
         {
           property: `og:image`,
           content: image
-        },
-        {
-          property: `og:url`,
-          content: url
         },
         {
           property: `og:site_name`,
@@ -40,7 +37,7 @@ const Seo = ({title, description, image, keywords, author, url}) => {
         },
         {
           name: `twitter:creator`,
-          content: author
+          content: "@_PierreFournier"
         },
         {
           name: `twitter:title`,
@@ -53,11 +50,7 @@ const Seo = ({title, description, image, keywords, author, url}) => {
         {
           name: `twitter:image`,
           content: image
-        },
-        {
-          name: `twitter:site`,
-          content: `@_PierreFournier`
-        },
+        }
 
       ].concat(
         keywords && keywords.length > 0 ? {

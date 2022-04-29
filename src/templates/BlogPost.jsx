@@ -67,9 +67,7 @@ const BlogPost = ({ data }) => {
           title={data.markdownRemark.frontmatter.title}
           description={data.markdownRemark.frontmatter.description}
           image={data.markdownRemark.frontmatter.image}
-          author={data.markdownRemark.frontmatter.author}
           keywords={data.markdownRemark.frontmatter.keywords}
-          url={`https://www.pierrefournier.dev/blog/${data.markdownRemark.frontmatter.slug}`}
         />
         <img src={data.markdownRemark.frontmatter.image} alt={data.markdownRemark.frontmatter.title}/>
         <em>{data.markdownRemark.frontmatter.imagedescription}</em>
