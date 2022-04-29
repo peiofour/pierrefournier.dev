@@ -62,9 +62,9 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.pierrefournier.dev',
-        sitemap: 'https://www.pierrefournier.dev/sitemap.xml',
         policy: [{userAgent: '*', allow: '/'}]
       }
-    }
+    },
+    `gatsby-plugin-react-helmet`,
   ],
 };
