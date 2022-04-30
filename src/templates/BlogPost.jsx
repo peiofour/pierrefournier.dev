@@ -62,7 +62,7 @@ const BlogPost = ({ data }) => {
 
   return (
       
-      <Layout className="post" title={data.markdownRemark.frontmatter.title}>
+      <Layout className="post">
         <Seo 
           title={data.markdownRemark.frontmatter.title}
           description={data.markdownRemark.frontmatter.description}

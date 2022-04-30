@@ -1,11 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const Seo = ({title, description, image, keywords}) => {        
+const Seo = ({title, description, image, keywords}) => {   
+  const lastTitle = title === undefined ? "Le blog de Pierre" : `${title} - Le blog de Pierre`
   return (
     <Helmet
-      title={title}
-      titleTemplate={title}
+      title={lastTitle}
+      titleTemplate={lastTitle}
       meta={[
         {
           name: `description`,
