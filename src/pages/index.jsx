@@ -38,7 +38,7 @@ const IndexPage = ({ data: { allMarkdownRemark }}) => {
   return (
     <Layout>
       <Seo 
-        description={"Je suis développeur, je vis à Toulouse dans le sud de la France."}
+        description={"Je suis développeur, je vis à Toulouse dans le sud de la France. Ici je poste des articles de blog sur la tech, les startups, le numérique en France et dans le monde, et sur bien d'autres sujets."}
         image={"https://res.cloudinary.com/pierrefournier-dev/image/upload/v1648208768/about/DSCF7848_nobjf9.jpg"}
         keywords={["blog", "pierre", "fournier", "accueil", "tech", "startup", "politique"]}
         slug={""}
