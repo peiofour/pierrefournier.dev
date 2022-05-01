@@ -68,6 +68,7 @@ const BlogPost = ({ data }) => {
           description={data.markdownRemark.frontmatter.description}
           image={data.markdownRemark.frontmatter.image}
           keywords={data.markdownRemark.frontmatter.keywords}
+          slug={data.markdownRemark.frontmatter.slug}
         />
         <img src={data.markdownRemark.frontmatter.image} alt={data.markdownRemark.frontmatter.title}/>
         <em>{data.markdownRemark.frontmatter.imagedescription}</em>

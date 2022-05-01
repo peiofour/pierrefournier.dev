@@ -41,6 +41,7 @@ const IndexPage = ({ data: { allMarkdownRemark }}) => {
         description={"Je suis développeur, je vis à Toulouse dans le sud de la France."}
         image={"https://res.cloudinary.com/pierrefournier-dev/image/upload/v1648208768/about/DSCF7848_nobjf9.jpg"}
         keywords={["blog", "pierre", "fournier", "accueil", "tech", "startup", "politique"]}
+        slug={""}
       />
       <div className="site-index flex-row">
         <div className="site-index__image">

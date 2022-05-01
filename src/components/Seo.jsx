@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-const Seo = ({title, description, image, keywords}) => {   
+const Seo = ({title, description, image, keywords, slug}) => {   
   const lastTitle = title === undefined ? "Le blog de Pierre" : `${title} - Le blog de Pierre`
   return (
     <Helmet
@@ -21,6 +21,10 @@ const Seo = ({title, description, image, keywords}) => {
           content: description
         },
         {
+          property: `og:url`,
+          content: `https://www.pierrefournier.dev/${slug}`
+        },
+        {
           property: `og:type`,
           content: `website`
         },
@@ -33,23 +37,27 @@ const Seo = ({title, description, image, keywords}) => {
           content: `Le blog de Pierre`
         },
         {
-          name: `twitter:card`,
+          property: `twitter:card`,
           content: `summary_large_image`
         },
         {
-          name: `twitter:creator`,
+          property: `twitter:url`,
+          content: `https://www.pierrefournier.dev/${slug}`
+        },
+        {
+          property: `twitter:creator`,
           content: "@_PierreFournier"
         },
         {
-          name: `twitter:title`,
+          property: `twitter:title`,
           content: title
         },
         {
-          name: `twitter:description`,
+          property: `twitter:description`,
           content: description
         },
         {
-          name: `twitter:image`,
+          property: `twitter:image`,
           content: image
         }
 

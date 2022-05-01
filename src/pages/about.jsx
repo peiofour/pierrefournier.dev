@@ -20,6 +20,7 @@ const AboutPage = ({ data: { markdownRemark }}) => {
         title={"À propos"}
         description={"Je suis développeur, je vis à Toulouse dans le sud de la France."}
         image={"https://res.cloudinary.com/pierrefournier-dev/image/upload/v1648208768/about/DSCF7848_nobjf9.jpg"}
+        slug={"about"}
       />
       <div className="post site-about" dangerouslySetInnerHTML={{__html: html}} />
     </Layout>
