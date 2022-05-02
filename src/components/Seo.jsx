@@ -67,7 +67,7 @@ const Seo = ({title, description, image, keywords, slug, type}) => {
           content: "@_PierreFournier"
         },
         {
-          name: "twitter:name",
+          name: "twitter:site",
           content: "@_PierreFournier"
         },
         
