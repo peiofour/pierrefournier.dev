@@ -1,11 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "Le blog de Pierre",
     siteUrl: `https://www.pierrefournier.dev`,
-    description: `Blog de Pierre Fournier. Je partage sur mes passions, sur mes projets, ainsi que sur mes voyages.`,
   },
   plugins: [
-    
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -58,11 +56,21 @@ module.exports = {
         },
       },
     },
+
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.pierrefournier.dev',
-        policy: [{userAgent: '*', allow: '/'}]
+        sitemap: 'https://www.pierrefournier.dev/sitemap/sitemap-0.xml',
+        resolveEnv: () => process.env.GATSBY_ENV,
+        env: {
+          development: {
+            policy: [{userAgent: '*', disallow: ['/']}]
+          },
+          production: {
+            policy: [{userAgent: '*', allow: '/'}]
+          }
+        }
       }
     },
     `gatsby-plugin-react-helmet`,
