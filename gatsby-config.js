@@ -7,10 +7,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Le blog de Pierre`,
-        short_name: `Le blog de Pierre`,
+        name: `Le blog de Pierre Fournier`,
+        short_name: `Le blog de Pierre Fournier`,
         start_url: `/`,
-        description: `Site et blog de Pierre Fournier. Je partage sur mes passions, je les fait intéragir entre elles. J'écris également sur mes projets, ainsi que sur mes voyages.`,
+        description: `Je suis développeur, je vis à Toulouse dans le sud de la France. Ici je poste des articles de blog sur la tech, les startups, le numérique en France et dans le monde, et sur bien d'autres sujets.`,
         background_color: `#edf6f9`,
         theme_color: `#a2466c`,
         display: `standalone`,
