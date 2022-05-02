@@ -62,15 +62,7 @@ module.exports = {
       options: {
         host: 'https://www.pierrefournier.dev',
         sitemap: 'https://www.pierrefournier.dev/sitemap/sitemap-0.xml',
-        resolveEnv: () => process.env.GATSBY_ENV,
-        env: {
-          development: {
-            policy: [{userAgent: '*', disallow: ['/']}]
-          },
-          production: {
-            policy: [{userAgent: '*', allow: '/'}]
-          }
-        }
+        policy: [{userAgent: '*', allow: '/'}]
       }
     },
     `gatsby-plugin-react-helmet`,
