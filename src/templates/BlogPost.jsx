@@ -75,7 +75,9 @@ const BlogPost = ({ data }) => {
         <em>{data.markdownRemark.frontmatter.imagedescription}</em>
 
         <h1>{data.markdownRemark.frontmatter.title}</h1>
-        <h5>{data.markdownRemark.frontmatter.author} - {clearDate}</h5>
+        <p style={{marginBottom:0, marginTop:0}}><b>par {data.markdownRemark.frontmatter.author}</b></p>
+        <p style={{marginTop:0}}><i>Publié le {clearDate}</i></p>
+        
         <ShareButtons data={data} />
         <h3>{data.markdownRemark.frontmatter.description}</h3>
         <div dangerouslySetInnerHTML={{__html: data.markdownRemark.html}} />

@@ -194,7 +194,7 @@ footer {
 .post {
   margin-left: auto;
   margin-right: auto;
-  max-width: 70ch;
+  max-width: 85ch;
   word-wrap: break-word;
   font-size: 20px;
   padding-bottom: 30px;
@@ -204,9 +204,28 @@ footer {
     margin-top: 15px;
     width: 100%;
   }
-   em {
-     margin-top: 0 !important;
-   }
+  
+  em {
+    margin-top: 0 !important;
+    font-size: 17px;
+  }
+
+  h1 {
+    margin-top: 10px !important;
+    margin-bottom: 5px;
+    
+  }
+  @media screen and (max-width: 1000px){
+    
+    h1 {
+      font-size: 1.6em !important;
+    }
+    h3 {
+      font-size: 1.1em !important;
+
+    }
+  }
+
 }
 
 .site-about {
@@ -395,6 +414,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Circular Std Bold' !important; 
+  line-height: 1.2;
 }
 
 header {
