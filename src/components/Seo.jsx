@@ -16,11 +16,11 @@ const Seo = ({title, description, image, keywords, slug, type}) => {
         },
         {
           property: "og:title",
-          content: title
+          content: lastTitle
         },
         {
           name: "twitter:title",
-          content: title
+          content: lastTitle
         },
 
         {
