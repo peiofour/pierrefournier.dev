@@ -12,7 +12,7 @@ const Footer = () => (
         <span className="icon">
           <BsFillHeartFill />
         </span>
-        {" "} by Pierre
+        {" "} by Pierre Fournier
       </p>
     </div>
   </footer>
