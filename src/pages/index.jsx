@@ -29,7 +29,7 @@ query {
 
 const content = {
   title: "Salut, moi c'est Pierre.",
-  text: "Je suis développeur web et mobile en freelance, je vis à Toulouse dans le sud de la France. Ici je poste des articles de blog sur la tech, les startups, le numérique en France et dans le monde, et sur bien d'autres sujets.",
+  text: "Je suis développeur fullstack en freelance, je vis à Toulouse dans le sud de la France. Ici je poste des articles de blog sur la tech, les startups, le numérique en France et dans le monde, et sur bien d'autres sujets.",
   more: "En savoir plus"
 }
 
@@ -40,7 +40,8 @@ const IndexPage = ({ data: { allMarkdownRemark }}) => {
       <Seo
         description={content.text}
         image={"https://res.cloudinary.com/pierrefournier-dev/image/upload/v1648208768/about/DSCF7848_nobjf9.jpg"}
-        keywords={["pierre fournier", "développeur","freelance", "blog", "pierre", "fournier", "tech", "startup", "politique"]}
+        keywords={["pierre fournier", "développeur","freelance", "blog", "pierre",
+        "fournier", "tech", "startup", "politique", "react", "react-native", "ruby on rails", "rails", "node.js", "next.js", "vue.js"]}
         slug=""
         type="website"
       />
