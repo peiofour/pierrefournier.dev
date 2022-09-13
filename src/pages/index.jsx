@@ -5,6 +5,7 @@ import Seo from "../components/Seo"
 import { Link, graphql } from 'gatsby'
 import { StaticImage } from "gatsby-plugin-image"
 import { RiInstagramFill, RiLinkedinFill, RiGithubFill, RiTelegramFill } from "react-icons/ri"
+import MaltIcon from "../assets/svg/malt.svg"
 
 export const pageQuery = graphql`
 query {
@@ -64,17 +65,17 @@ const IndexPage = ({ data: { allMarkdownRemark }}) => {
           </div>
           
           <div className="site-index__content--social-icons">
-            <Link to="https://www.instagram.com/pierrefournier__" target="_blank">
-              <RiInstagramFill />
-            </Link>
             <Link to="https://www.linkedin.com/in/pierrefournier1" target="_blank">
-              <RiLinkedinFill />
+              <RiLinkedinFill className="svg_icon" />
             </Link>
             <Link to="https://github.com/peiofour" target="_blank">
-              <RiGithubFill />
+              <RiGithubFill className="svg_icon" />
             </Link>
-            <Link to="https://t.me/superbasque" target="_blank">
-              <RiTelegramFill />
+            <Link to="https://www.malt.fr/profile/pierrefournier2" target="_blank">
+              <MaltIcon stroke="currentColor" fill="currentColor" width="1em" height="1em" className="svg_icon" />
+            </Link>
+            <Link to="https://www.instagram.com/pierrefournier__" target="_blank">
+              <RiInstagramFill className="svg_icon" />
             </Link>
           </div>
         </div>

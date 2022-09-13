@@ -157,15 +157,15 @@ footer {
 
     &--social-icons {
       margin-top: 40px;
-      font-size: 35px;
+      font-size: 35px !important;
       @media only screen and (max-width: 1000px){
         text-align: center;
       }
-      & a {
-        padding-right: 10px;
+      .svg_icon {
+        padding-right: 10px !important;
         color: var(--text-light);
         &:hover {
-          color: var(--color-hover)
+          color: var(--color-hover);
         }
         transition: color 0.2s linear;
       }
