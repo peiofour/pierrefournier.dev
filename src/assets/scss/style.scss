@@ -237,6 +237,24 @@ footer {
     margin-top: 15px;
     margin-bottom: 15px;
   }
+
+  &__skills {
+    display: flex;
+    justify-content: space-around;
+    @media screen and (max-width: 760px){
+      flex-direction: column !important;
+    }
+
+    div {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    img {
+      height: 55px;
+      width: auto;
+      border-radius: 0;
+    }
+  }
 }
 
 .card-list {

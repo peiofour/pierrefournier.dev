@@ -9,12 +9,10 @@ title: "À propos"
 Je m'appelle __Pierre Fournier__.
 
 Je suis __développeur__ fullstack en freelance.
-
 J'ai __25 ans__, j'habite à __Toulouse__, dans le sud de la France, je suis originaire du Pays Basque.
-
 Je suis passionné par de nombreux sujets, notamment la photographie, la tech, les start-ups, le cinéma, le sport, la politique, l'histoire et l'astronomie.
 
-Sur ce site qui me sert également de blog, je partage sur mes passions, je les fais interagir entre elles. J'écris également sur mes projets, ainsi que sur mes voyages.
+
 
 Je développe principalement en __Javascript__, __React__, __Node.js__, __Next.js__, __Vue.js__, __Ruby on Rails__, __React Native__, __Python__. J'ai également des compétences en __Docker__, __MySQL__, __PostgreSQL__, __CI/CD__.
 
