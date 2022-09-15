@@ -51,111 +51,153 @@ const AboutPage = () => {
         </p>
         <h2>Skills</h2>
         <h3>Front-end</h3>
-        <div className='site-about__skills'>
-          <div>
-            <img 
-              src={ReactLogo}
-              alt="React logo"
-            />
-            <p>React</p>
-          </div>
-          <div>
-            <img src={VueLogo} alt="Vue.js logo" />
-            <p>Vue.js</p>
-          </div>
-          <div>
-            <img src={NextLogo} alt="Next.js logo" />
-            <p>Next.js</p>
-          </div>
-          <div>
-            <img src={CypressLogo} alt="Cypress logo" />
-            <p>Cypress</p>
-          </div>
-        </div>
+        <ul className='site-about__skills row justify-content-center px-0'>
+          <li className='col-6 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img 
+                src={ReactLogo}
+                alt="React logo"
+              />
+              <p>React</p>
+            </div>
+          </li>
+          <li className='col-6 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={VueLogo} alt="Vue.js logo" />
+              <p>Vue.js</p>
+            </div>
+          </li>
+          <li className='col-6 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={NextLogo} alt="Next.js logo" />
+              <p>Next.js</p>
+            </div>
+          </li>
+          <li className='col-6 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={CypressLogo} alt="Cypress logo" />
+              <p>Cypress</p>
+            </div>
+          </li>
+        </ul>
 
         <h3>Mobile</h3>
-        <div className='site-about__skills'>
-          <div>
-            <img src={ReactLogo} alt="React-Native logo" />
-            <p>React-Native</p>
-          </div>
-          <div>
-            <img src={IonicLogo} alt="Ionic Logo" />
-            <p>Ionic</p>
-          </div>
-          <div>
-            <img src={FlutterLogo} alt="Flutter Logo" />
-            <p>Flutter</p>
-          </div>
-          <div>
-            <img src={SwiftLogo} alt="Swift logo" />
-            <p>Swift</p>
-          </div>
-          <div>
-            <img src={KotlinLogo} alt="Kotlin logo" />
-            <p>Kotlin</p>
-          </div>
-        </div>
+        <ul className='site-about__skills row justify-content-center px-0'>
+          <li className='col-5 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={ReactLogo} alt="React-Native logo" />
+              <p>React-Native</p>
+            </div>
+          </li>
+          <li className='col-5 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={IonicLogo} alt="Ionic Logo" />
+              <p>Ionic</p>
+            </div>
+          </li>
+          <li className='col-5 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={FlutterLogo} alt="Flutter Logo" />
+              <p>Flutter</p>
+            </div>
+          </li>
+          <li className='col-5 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={SwiftLogo} alt="Swift logo" />
+              <p>Swift</p>
+            </div>
+          </li>
+          <li className='col-5 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={KotlinLogo} alt="Kotlin logo" />
+              <p>Kotlin</p>
+            </div>
+          </li>
+        </ul>
 
         <h3>Back-end</h3>
-        <div className='site-about__skills'>
-          <div>
-            <img src={NodeLogo} alt="Node logo" />
-            <p>Node.js</p>
-          </div>
-          <div>
-            <img src={RailsLogo} alt="Rails logo" />
-            <p>Ruby on Rails</p>
-          </div>
-          <div>
-            <img src={TypescriptLogo} alt="TypeScript logo" />
-            <p>TypeScript</p>
-          </div>
-        </div>
+        <ul className='site-about__skills row justify-content-center px-0'>
+          <li className='col-8 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={NodeLogo} alt="Node logo" />
+              <p>Node.js</p>
+            </div>
+          </li>
+          <li className='col-8 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={RailsLogo} alt="Rails logo" />
+              <p>Ruby on Rails</p>
+            </div>
+          </li>
+          <li className='col-8 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={TypescriptLogo} alt="TypeScript logo" />
+              <p>TypeScript</p>
+            </div>
+          </li>
+        </ul>
 
         <h3>DevOps</h3>
-        <div className='site-about__skills'>
-          <div>
-            <img src={DockerLogo} alt="Docker logo" />
-            <p>Docker</p>
-          </div>
-          <div>
-            <img src={GitLogo} alt="Git logo" />
-            <p>Git</p>
-          </div>
-          <div>
-            <img src={GithubLogo} alt="Github logo" />
-            <p>Github Actions</p>
-          </div>
-          <div>
-            <img src={GitlabLogo} alt="Gitlab logo" />
-            <p>Gitlab CI/CD</p>
-          </div>
-          <div>
-            <img src={AzureLogo} alt="Azure Pipelines logo" />
-            <p>Azure Pipelines</p>
-          </div>
-        </div>
+        <ul className='site-about__skills row justify-content-center px-0'>
+          <li className='col-5 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={DockerLogo} alt="Docker logo" />
+              <p>Docker</p>
+            </div>
+          </li>
+          <li className='col-5 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={GitLogo} alt="Git logo" />
+              <p>Git</p>
+            </div>
+          </li>
+          <li className='col-5 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={GithubLogo} alt="Github logo" />
+              <p>Github Actions</p>
+            </div>
+          </li>
+          <li className='col-5 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={GitlabLogo} alt="Gitlab logo" />
+              <p>Gitlab CI/CD</p>
+            </div>
+          </li>
+          <li className='col-5 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={AzureLogo} alt="Azure Pipelines logo" />
+              <p>Azure Pipelines</p>
+            </div>
+          </li>
+        </ul>
 
         <h3>BDD</h3>
-        <div className='site-about__skills'>
-          <div>
-            <img src={PostgresLogo} alt="PostgresSQL logo" />
-            <p>PostgreSQL</p>
-          </div>
-          <div>
-            <img src={MysqlLogo} alt="MySQL logo" />
-            <p>MySQL</p>
-          </div>
-          <div>
-            <img src={RedisLogo} alt="Redis logo" />
-            <p>Redis</p>
-          </div>
-          <div>
-            <img src={MongoLogo} alt="MongoDB logo" />
-            <p>MongoDB</p>
-          </div>
-        </div>
+        <ul className='site-about__skills row justify-content-center px-0'>
+          <li className='col-6 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={PostgresLogo} alt="PostgresSQL logo" />
+              <p>PostgreSQL</p>
+            </div>
+          </li>
+          <li className='col-6 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={MysqlLogo} alt="MySQL logo" />
+              <p>MySQL</p>
+            </div>
+          </li>
+          <li className='col-6 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={RedisLogo} alt="Redis logo" />
+              <p>Redis</p>
+            </div>
+          </li>
+          <li className='col-6 col-md d-flex'>
+            <div className='my-3 mx-auto'>
+              <img src={MongoLogo} alt="MongoDB logo" />
+              <p>MongoDB</p>
+            </div>
+          </li>
+        </ul>
 
       </div>
     </Layout>
