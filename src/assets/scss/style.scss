@@ -1,5 +1,7 @@
 @import "./typography.scss";
+
 @import "bootstrap/scss/bootstrap";
+
 
 .primary-container {
   min-height: 100vh;
@@ -157,7 +159,8 @@ footer {
 
     &--social-icons {
       margin-top: 40px;
-      font-size: 35px !important;
+      font-size: 45px !important;
+      
       @media only screen and (max-width: 1000px){
         text-align: center;
       }
@@ -199,10 +202,23 @@ footer {
   font-size: 20px;
   padding-bottom: 30px;
 
+  &__head-image {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    img {
+      width: 100% !important;
+      height: auto;
+      max-width: 100% !important;
+    }
+  }
+
   img {
-    max-width: 100%;
+    width: 80vw;
+    max-width: 600px;
     margin-top: 15px;
-    width: 100%;
+    margin-bottom: 15px;
+    
+    display: block;
   }
   
   em {
@@ -232,6 +248,8 @@ footer {
   text-align: center;
 
   img {
+    margin-left: auto;
+    margin-right: auto;
     width: 80vw;
     max-width: 600px;
     margin-top: 15px;
@@ -239,7 +257,12 @@ footer {
   }
 
   &__skills {
-    
+    div {
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
     img {
       height: 55px;
       width: auto;
@@ -249,18 +272,11 @@ footer {
 }
 
 .card-list {
-  list-style: none;
   margin-top: 50px;
-  display: grid;
-  grid-gap: var(--size-600);
-  grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
   padding: 0;
 }
 
 .card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   padding: 1.5rem;
   border: 1px solid rgba(0,0,0,.08);
   box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
@@ -268,6 +284,7 @@ footer {
   border-radius: 8px;
   transition: box-shadow 0.3s linear;
   max-width: 50ch;
+  
 
   &:hover {
     border: 1px solid rgba(0, 0, 0, 0.12);
@@ -311,7 +328,7 @@ footer {
 .button {
   text-decoration: none;
   background-color: var(--color-button);
-  color: var(--background);
+  color: var(--background) !important;
   padding: 15px;
   border-radius: 12px;
 
@@ -325,6 +342,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+  
   .share-button {
     cursor: pointer;
     font-size: 16px;
@@ -334,9 +352,9 @@ footer {
     color: var(--background);
     padding: 10px;
     display: flex;
-    h5{
+    div {
       margin: 0;
-      padding-top: 5px;
+      font-size: 1rem;
       padding-left: 3px;
     }
   }
@@ -413,8 +431,8 @@ body {
   font-family: 'Circular Std Book' !important;
   color: var(--text-light);
   background-color: var(--background-light);
-  min-height: 100vh;
   min-height: -webkit-fill-available;
+  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   margin: 0; 
@@ -423,6 +441,16 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Circular Std Bold' !important; 
   line-height: 1.2;
+  //normal
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 header {

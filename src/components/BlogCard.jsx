@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-const BlogCard = ({ link, title, description, image }) => {
-  console.log(image)
+const BlogCard = ({ link, title, subtitle, image, date }) => {
+  const dateLocale = new Date(date).toLocaleDateString('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' });
   return (
-    <li className="card">
+    <div className="card my-3 mx-auto">
       <Link to={link}>
         <img
           src={image}
@@ -14,11 +14,12 @@ const BlogCard = ({ link, title, description, image }) => {
         <h2>
           {title}
         </h2>
+        <i>Le {dateLocale}</i>
         <p>
-          {description}
+          {subtitle}
         </p>
       </Link>
-    </li>
+    </div>
   )
 }
 

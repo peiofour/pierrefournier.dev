@@ -171,7 +171,7 @@ const AboutPage = () => {
           </li>
         </ul>
 
-        <h3>BDD</h3>
+        <h3>Databases</h3>
         <ul className='site-about__skills row justify-content-center px-0'>
           <li className='col-6 col-md d-flex'>
             <div className='my-3 mx-auto'>

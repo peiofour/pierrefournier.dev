@@ -27,29 +27,29 @@ const ShareButtons = ({data}) => (
       <button className="share-button twitter"$
         onClick={() => window.open(`https://twitter.com/share?url=https://www.pierrefournier.dev/blog/${data.markdownRemark.frontmatter.slug}&text=${'"'+data.markdownRemark.frontmatter.title+'" - Le Blog de Pierre'}`, '_blank').focus()}  >
         <RiTwitterFill size={25} /> 
-        <h5>Tweeter</h5>
+        <div>Tweeter</div>
       </button>
       <button className="share-button facebook"
         onClick={() => window.open(`https://www.facebook.com/sharer.php?u=https://www.pierrefournier.dev/blog/${data.markdownRemark.frontmatter.slug}&t=${'"'+data.markdownRemark.frontmatter.title+'" - Le Blog de Pierre'}`, '_blank').focus()} >
         <RiFacebookFill size={25} /> 
-        <h5>Partager</h5>
+        <div>Partager</div>
       </button>
       <button className="share-button telegram" 
         onClick={() => window.open(`https://t.me/share/url?url=https://www.pierrefournier.dev/blog/${data.markdownRemark.frontmatter.slug}&text=${'"'+data.markdownRemark.frontmatter.title+'" - Le Blog de Pierre'}`, '_blank').focus()} >
         <RiTelegramFill size={25} /> 
-        <h5>Partager</h5>
+        <div>Partager</div>
       </button>
       <button className="share-button whatsapp" 
         onClick={() => window.open(`https://wa.me/?text=https://www.pierrefournier.dev/blog/${data.markdownRemark.frontmatter.slug}`, '_blank').focus()}
       >
         <RiWhatsappFill size={25} /> 
-        <h5>Partager</h5>
+        <div>Partager</div>
       </button>
       <button className="share-button linkedin"
         onClick={() => window.open(`https://www.linkedin.com/sharing/share-offsite/?url=https://www.pierrefournier.dev/blog/${data.markdownRemark.frontmatter.slug}`, '_blank').focus()}
       >
         <RiLinkedinFill size={25} /> 
-        <h5>Partager</h5>
+        <div>Partager</div>
       </button>
     </div>
   </>
@@ -71,8 +71,10 @@ const BlogPost = ({ data }) => {
           slug={data.markdownRemark.frontmatter.slug}
           type="article"
         />
-        <img src={data.markdownRemark.frontmatter.image} alt={data.markdownRemark.frontmatter.title}/>
-        <em>{data.markdownRemark.frontmatter.imagedescription}</em>
+        <div className='post__head-image'>
+          <img src={data.markdownRemark.frontmatter.image} alt={data.markdownRemark.frontmatter.title}/>
+          <em>{data.markdownRemark.frontmatter.imagedescription}</em>
+        </div>
 
         <h1>{data.markdownRemark.frontmatter.title}</h1>
         <p style={{marginBottom:0, marginTop:0}}><b>par {data.markdownRemark.frontmatter.author}</b></p>

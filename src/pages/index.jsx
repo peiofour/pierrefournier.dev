@@ -40,7 +40,7 @@ const IndexPage = ({ data: { allMarkdownRemark }}) => {
     <Layout>
       <Seo
         description={content.text}
-        image={"https://res.cloudinary.com/pierrefournier-dev/image/upload/v1648208768/about/DSCF7848_nobjf9.jpg"}
+        image={"https://res.cloudinary.com/pierrefournier-dev/image/upload/v1663322170/about/DSCF7848_Original_h5wxfy.jpg"}
         keywords={["pierre fournier", "développeur","freelance", "blog", "pierre",
         "fournier", "tech", "startup", "politique", "react", "react-native", "ruby on rails", "rails", "node.js", "next.js", "vue.js"]}
         slug=""
@@ -48,14 +48,13 @@ const IndexPage = ({ data: { allMarkdownRemark }}) => {
       />
       <div className="site-index flex-row">
         <div className="site-index__image">
-          <StaticImage
-            src="https://res.cloudinary.com/pierrefournier-dev/image/upload/v1648208768/about/DSCF7848_nobjf9.jpg"
-            alt="Moi"
-            width="350"
-            height="350"
-            loading="lazy"
-            style={{borderRadius: '50%'}}
+          <img
+            src="https://res.cloudinary.com/pierrefournier-dev/image/upload/v1663322170/about/DSCF7848_Original_h5wxfy.jpg"
+            alt="Pierre Fournier"
+            width={350}
+            height={"auto"}
           />
+        
         </div>
         <div className="site-index__content">
           <h1>{content.title}</h1>
@@ -81,11 +80,14 @@ const IndexPage = ({ data: { allMarkdownRemark }}) => {
         </div>
       </div>
 
-      <h2>Derniers posts</h2>
+      <h2
+        className="text-center"
+      >Derniers posts</h2>
 
-      <ul className="card-list">
+      <ul className="card-list row justify-content-center px-0">
         {
           allMarkdownRemark.edges.map((edge) =>
+          <li className="col-10 col-md d-flex">
             <BlogCard
               title={edge.node.frontmatter.title}
               subtitle={edge.node.frontmatter.description}
@@ -93,6 +95,7 @@ const IndexPage = ({ data: { allMarkdownRemark }}) => {
               image={edge.node.frontmatter.image}
               link={`blog/${edge.node.frontmatter.slug}`}
             />
+          </li>
           )
         }
         
