@@ -10,7 +10,7 @@ module.exports = {
         name: `Le blog de Pierre Fournier`,
         short_name: `Le blog de Pierre Fournier`,
         start_url: `/`,
-        description: `Je suis développeur, je vis à Toulouse dans le sud de la France. Ici je poste des articles de blog sur la tech, les startups, le numérique en France et dans le monde, et sur bien d'autres sujets.`,
+        description: `Je suis développeur fullstack en freelance, je vis à Toulouse dans le sud de la France. Ici je poste des articles de blog sur la tech, les startups, le numérique en France et dans le monde, et sur bien d'autres sujets.`,
         background_color: `#edf6f9`,
         theme_color: `#a2466c`,
         display: `standalone`,
@@ -63,6 +63,14 @@ module.exports = {
         host: 'https://www.pierrefournier.dev',
         sitemap: 'https://www.pierrefournier.dev/sitemap/sitemap-0.xml',
         policy: [{userAgent: '*', allow: '/'}]
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/
+        }
       }
     },
     `gatsby-plugin-react-helmet`,
