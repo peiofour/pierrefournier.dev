@@ -19,9 +19,11 @@ const BlogCard = ({ link, title, subtitle, image, date }: BlogCardProps) => {
 		<div className='card my-3 mx-auto'>
 			<Link to={link}>
 				<img src={image} alt={title} width='100%' />
-				<h2>{title}</h2>
-				<i>Le {dateLocale}</i>
-				<p>{subtitle}</p>
+				<div className='px-3 pb-2'>
+					<h2>{title}</h2>
+					<i>Le {dateLocale}</i>
+					<p>{subtitle}</p>
+				</div>
 			</Link>
 		</div>
 	)
