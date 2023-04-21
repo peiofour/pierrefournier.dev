@@ -211,6 +211,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/githubLogo.png'
 								alt='Github logo'
 								placeholder='none'
+								height={55}
 							/>
 							<p>Github Actions</p>
 						</div>
