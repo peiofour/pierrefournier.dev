@@ -2,7 +2,9 @@ import React from 'react'
 import Layout from '../components/Layout'
 import BlogCard from '../components/BlogCard'
 import { Link, graphql } from 'gatsby'
-import { RiInstagramFill, RiLinkedinFill, RiGithubFill } from 'react-icons/ri'
+import { RiInstagramFill } from '@react-icons/all-files/ri/RiInstagramFill'
+import { RiGithubFill } from '@react-icons/all-files/ri/RiGithubFill'
+import { RiLinkedinFill } from '@react-icons/all-files/ri/RiLinkedinFill'
 import Seo from '../components/Seo'
 
 export const pageQuery = graphql`
@@ -65,7 +67,7 @@ export function Head() {
   )
 }
 
-const MaltIcon = require('../assets/svg/malt.svg') as React.FunctionComponent<React.SVGAttributes<SVGElement>>
+// const MaltIcon = require('../assets/svg/malt.svg') as React.FunctionComponent<React.SVGAttributes<SVGElement>>
 
 interface IndexPageProps {
   data: {
@@ -119,7 +121,7 @@ const IndexPage = ({ data: { allMarkdownRemark } }: IndexPageProps) => {
 						<Link to='https://github.com/peiofour' target='_blank'>
 							<RiGithubFill className='svg_icon' />
 						</Link>
-						<Link
+						{/* <Link
 							to='https://www.malt.fr/profile/pierrefournier2'
 							target='_blank'
 						>
@@ -130,7 +132,7 @@ const IndexPage = ({ data: { allMarkdownRemark } }: IndexPageProps) => {
 								height='1em'
 								className='svg_icon'
 							/>
-						</Link>
+						</Link> */}
 						<Link
 							to='https://www.instagram.com/pierrefournier__'
 							target='_blank'

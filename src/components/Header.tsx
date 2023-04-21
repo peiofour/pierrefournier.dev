@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import { BsList, BsListNested } from 'react-icons/bs'
+import { BsList } from '@react-icons/all-files/bs/BsList'
+import { BsListNested } from '@react-icons/all-files/bs/BsListNested'
 
 const MenuItems = [
 	{

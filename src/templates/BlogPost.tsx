@@ -1,13 +1,11 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
-import {
-	RiLinkedinFill,
-	RiTelegramFill,
-	RiTwitterFill,
-	RiFacebookFill,
-	RiWhatsappFill,
-} from 'react-icons/ri'
+import { RiTwitterFill } from '@react-icons/all-files/ri/RiTwitterFill'
+import { RiFacebookFill } from '@react-icons/all-files/ri/RiFacebookFill'
+import { RiLinkedinFill } from '@react-icons/all-files/ri/RiLinkedinFill'
+import { RiTelegramFill } from '@react-icons/all-files/ri/RiTelegramFill'
+import { RiWhatsappFill } from '@react-icons/all-files/ri/RiWhatsappFill'
 import { graphql } from 'gatsby'
 
 export const query = graphql`

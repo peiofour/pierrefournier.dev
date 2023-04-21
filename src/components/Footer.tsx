@@ -1,5 +1,6 @@
 import React from 'react'
-import { BsFillHeartFill, BsCodeSlash } from 'react-icons/bs'
+import { BsFillHeartFill } from '@react-icons/all-files/bs/BsFillHeartFill'
+import { BsCodeSlash } from '@react-icons/all-files/bs/BsCodeSlash'
 
 const Footer = () => (
 	<footer>
