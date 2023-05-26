@@ -63,7 +63,7 @@ const AboutPage = () => {
 					me contacter par{' '}
 					<a href='mailto:pierre.fournier@protonmail.com'>mail</a> ou
 					sur{' '}
-					<a href='https://www.linkedin.com/in/pierre-fournier-1b1b3b1b0/'>
+					<a href='https://www.linkedin.com/in/pierrefournier1/' target='_blank' rel='noreferrer'>
 						LinkedIn
 					</a>
 					.
