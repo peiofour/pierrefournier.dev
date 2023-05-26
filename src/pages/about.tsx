@@ -35,16 +35,17 @@ const AboutPage = () => {
 		<Layout>
 			<div className='post site-about'>
 				<h1>hello, friend</h1>
-				<img
+				<StaticImage
 					src='https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_1055/v1662735743/about/9CE5CA18-B041-48D8-9487-288B8C74DD74_j0nyiu.png'
 					alt='Portrait de Pierre Fournier'
+					width={600}
 				/>
 				<p>Je m'appelle Pierre Fournier.</p>
 				<p>
-					Je suis développeur fullstack en freelance. J'ai 25 ans,
+					Je suis développeur fullstack en freelance. J'ai 26 ans,
 					j'habite à Toulouse, dans le sud de la France et je suis
 					originaire du Pays Basque. Je suis passionné par de nombreux
-					sujets, notamment la tech, les startups, le cinéma, la
+					sujets : la tech, les startups, la politique, le cinéma, la
 					photographie, la cuisine, l'histoire et l'astronomie.
 				</p>
 				<p>
@@ -54,7 +55,14 @@ const AboutPage = () => {
 					</a>
 					.
 				</p>
-				<h2>Skills</h2>
+				<h2 className='pt-4'>
+					Envie de collaborer ensemble ?
+				</h2>
+				<p>Je suis disponible pour différentes prestations de développement, de devOps ou de conseils à destination de tous types d'organisations ou entreprises.
+					N'hésitez pas à me contacter par <a href="mailto:pierre.fournier@protonmail.com">mail</a> ou sur <a href="https://www.linkedin.com/in/pierre-fournier-1b1b3b1b0/">LinkedIn</a>.
+				</p>
+				<h4>Tarif journalier moyen : 400€ HT</h4>
+				<h2 className='pt-5'>Skills</h2>
 				<h3>Front-end</h3>
 				<ul className='site-about__skills row justify-content-center px-0'>
 					<li className='col-6 col-md d-flex'>
@@ -135,7 +143,7 @@ const AboutPage = () => {
 
 				<h3>Back-end</h3>
 				<ul className='site-about__skills row justify-content-center px-0'>
-					<li className='col-8 col-md d-flex'>
+					<li className='col-5 col-md d-flex'>
 						<div className='my-3 mx-auto'>
 							<StaticImage
 								src='../assets/images/logo_skills/nodeLogo.png'
@@ -145,7 +153,7 @@ const AboutPage = () => {
 							<p>Node.js</p>
 						</div>
 					</li>
-					<li className='col-8 col-md d-flex'>
+					<li className='col-5 col-md d-flex'>
 						<div className='my-3 mx-auto'>
 							<StaticImage
 								src='../assets/images/logo_skills/railsLogo.png'
@@ -155,7 +163,7 @@ const AboutPage = () => {
 							<p>Ruby on Rails</p>
 						</div>
 					</li>
-					<li className='col-8 col-md d-flex'>
+					<li className='col-5 col-md d-flex'>
 						<div className='my-3 mx-auto'>
 							<StaticImage
 								src='../assets/images/logo_skills/typescriptLogo.png'
@@ -197,6 +205,16 @@ const AboutPage = () => {
 								placeholder='none'
 							/>
 							<p>Github Actions</p>
+						</div>
+					</li>
+					<li className='col-5 col-md d-flex'>
+						<div className='my-3 mx-auto'>
+							<StaticImage
+								src='../assets/images/logo_skills/terraformLogo.png'
+								alt='Jenkins logo'
+								placeholder='none'
+							/>
+							<p>Terraform</p>
 						</div>
 					</li>
 					<li className='col-5 col-md d-flex'>

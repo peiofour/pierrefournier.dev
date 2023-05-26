@@ -6,6 +6,7 @@ import { RiInstagramFill } from '@react-icons/all-files/ri/RiInstagramFill'
 import { RiGithubFill } from '@react-icons/all-files/ri/RiGithubFill'
 import { RiLinkedinFill } from '@react-icons/all-files/ri/RiLinkedinFill'
 import Seo from '../components/Seo'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export const pageQuery = graphql`
 	query {
@@ -23,6 +24,7 @@ export const pageQuery = graphql`
 						imagedescription
 						slug
 					}
+					excerpt
 					id
 				}
 			}
@@ -33,7 +35,7 @@ export const pageQuery = graphql`
 
 const content = {
 	title: "Salut, moi c'est Pierre.",
-	text: "Je suis développeur fullstack en freelance, je vis à Toulouse dans le sud de la France. Ici je poste des articles de blog sur la tech, les startups, le numérique en France et dans le monde, et sur bien d'autres sujets.",
+	text: "Je suis développeur fullstack en freelance, je vis à Toulouse dans le sud de la France. Ici je publie des articles de blog sur la tech, les startups, la politique, le numérique en France et dans le monde.",
 	more: 'En savoir plus',
 }
 
@@ -46,6 +48,8 @@ export function Head() {
       }
       keywords={[
         'pierre fournier',
+				'jeunes avec macron',
+				'renaissance',
         'développeur',
         'freelance',
         'blog',
@@ -54,12 +58,6 @@ export function Head() {
         'tech',
         'startup',
         'politique',
-        'react',
-        'react-native',
-        'ruby on rails',
-        'rails',
-        'node.js',
-        'next.js',
       ]}
       slug=''
       type='website'
@@ -82,6 +80,7 @@ interface IndexPageProps {
             imagedescription: string
             slug: string
           }
+					excerpt: string
           id: string
         }
       }[]
@@ -95,11 +94,10 @@ const IndexPage = ({ data: { allMarkdownRemark } }: IndexPageProps) => {
 		<Layout>
 			<div className='site-index flex-row'>
 				<div className='site-index__image'>
-					<img
-						src='https://res.cloudinary.com/pierrefournier-dev/image/upload/v1663322170/about/DSCF7848_Original_h5wxfy.jpg'
+					<StaticImage
+						src='https://res.cloudinary.com/pierrefournier-dev/image/upload/v1684932586/about/IMG_0373_eml1fx.jpg'
 						alt='Pierre Fournier'
 						width={350}
-						height={'auto'}
 					/>
 				</div>
 				<div className='site-index__content'>
@@ -150,7 +148,7 @@ const IndexPage = ({ data: { allMarkdownRemark } }: IndexPageProps) => {
 					<li className='col-10 col-md d-flex'>
 						<BlogCard
 							title={edge.node.frontmatter.title}
-							subtitle={edge.node.frontmatter.description}
+							subtitle={edge.node.excerpt}
 							date={edge.node.frontmatter.date}
 							image={edge.node.frontmatter.image}
 							link={`blog/${edge.node.frontmatter.slug}`}
