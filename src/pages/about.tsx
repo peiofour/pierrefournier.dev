@@ -211,7 +211,7 @@ const AboutPage = () => {
 						<div className='my-3 mx-auto'>
 							<StaticImage
 								src='../assets/images/logo_skills/terraformLogo.png'
-								alt='Jenkins logo'
+								alt='Terraform logo'
 								placeholder='none'
 							/>
 							<p>Terraform</p>

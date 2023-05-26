@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, navigate } from 'gatsby'
+import { navigate } from 'gatsby'
 import { Card } from 'react-bootstrap'
 
 interface BlogCardProps {
