@@ -28,7 +28,7 @@ const Seo = ({ title, description, image, keywords, slug, type }: SeoProps) => {
 			<meta property='og:type' content={type ?? 'website'} />
 			<meta property='og:image' content={image} />
 			<meta property='og:site_name' content='Le blog de Pierre' />
-			<meta name='twitter:card' content='summary' />
+			<meta name='twitter:card' content='summary_large_image' />
 			<meta name='twitter:creator' content='peiofour' />
 			<meta name='twitter:title' content={lastTitle} />
 			<meta
