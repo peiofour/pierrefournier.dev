@@ -6,7 +6,7 @@ import { RiFacebookFill } from '@react-icons/all-files/ri/RiFacebookFill'
 import { RiLinkedinFill } from '@react-icons/all-files/ri/RiLinkedinFill'
 import { RiTelegramFill } from '@react-icons/all-files/ri/RiTelegramFill'
 import { RiWhatsappFill } from '@react-icons/all-files/ri/RiWhatsappFill'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 export const query = graphql`
 	query SinglePostQuery($id: String!) {
@@ -54,79 +54,60 @@ interface BlogPostProps {
 const ShareButtons = ({ data }: BlogPostProps) => (
 	<>
 		<div className='share-buttons'>
-			<button
-				className='share-button twitter'
-				onClick={() =>
-					openLink(
-						`https://twitter.com/share?url=https://www.pierrefournier.dev/blog/${
-							data.markdownRemark.frontmatter.slug
-						}&text=${
-							'"' +
-							data.markdownRemark.frontmatter.title +
-							'" - Le Blog de Pierre'
-						}`,
-					)
-				}
+			<Link
+				to={`https://twitter.com/share?url=https://www.pierrefournier.dev/blog/${
+					data.markdownRemark.frontmatter.slug
+				}&text=${
+					'"' +
+					data.markdownRemark.frontmatter.title +
+					'" - Le Blog de Pierre'
+				}`}
+				target='_blank'
 			>
 				<RiTwitterFill size={25} />
-				<div>Tweeter</div>
-			</button>
-			<button
-				className='share-button facebook'
-				onClick={() =>
-					openLink(
-						`https://www.facebook.com/sharer.php?u=https://www.pierrefournier.dev/blog/${
-							data.markdownRemark.frontmatter.slug
-						}&t=${
-							'"' +
-							data.markdownRemark.frontmatter.title +
-							'" - Le Blog de Pierre'
-						}`,
-					)
-				}
+			</Link>
+			<Link
+				to={`https://www.facebook.com/sharer.php?u=https://www.pierrefournier.dev/blog/${
+					data.markdownRemark.frontmatter.slug
+				}&t=${
+					'"' +
+					data.markdownRemark.frontmatter.title +
+					'" - Le Blog de Pierre'
+				}`}
+				target='_blank'
 			>
 				<RiFacebookFill size={25} />
-				<div>Partager</div>
-			</button>
-			<button
-				className='share-button telegram'
-				onClick={() =>
-					openLink(
-						`https://t.me/share/url?url=https://www.pierrefournier.dev/blog/${
-							data.markdownRemark.frontmatter.slug
-						}&text=${
-							'"' +
-							data.markdownRemark.frontmatter.title +
-							'" - Le Blog de Pierre'
-						}`,
-					)
-				}
+			</Link>
+			<Link
+				to={`https://t.me/share/url?url=https://www.pierrefournier.dev/blog/${
+					data.markdownRemark.frontmatter.slug
+				}&text=${
+					'"' +
+					data.markdownRemark.frontmatter.title +
+					'" - Le Blog de Pierre'
+				}`}
+				target='_blank'
 			>
 				<RiTelegramFill size={25} />
-				<div>Partager</div>
-			</button>
-			<button
-				className='share-button whatsapp'
-				onClick={() =>
-					openLink(
-						`https://wa.me/?text=https://www.pierrefournier.dev/blog/${data.markdownRemark.frontmatter.slug}`,
-					)
-				}
+			</Link>
+			<Link
+				to={`https://wa.me/?text=https://www.pierrefournier.dev/blog/${data.markdownRemark.frontmatter.slug}`}
+				target='_blank'
 			>
 				<RiWhatsappFill size={25} />
-				<div>Partager</div>
-			</button>
-			<button
-				className='share-button linkedin'
-				onClick={() =>
-					openLink(
-						`https://www.linkedin.com/sharing/share-offsite/?url=https://www.pierrefournier.dev/blog/${data.markdownRemark.frontmatter.slug}`,
-					)
-				}
+			</Link>
+			<Link
+				to={`https://www.linkedin.com/shareArticle?mini=true&url=https://www.pierrefournier.dev/blog/${
+					data.markdownRemark.frontmatter.slug
+				}&title=${
+					'"' +
+					data.markdownRemark.frontmatter.title +
+					'" - Le Blog de Pierre'
+				}`}
+				target='_blank'
 			>
 				<RiLinkedinFill size={25} />
-				<div>Partager</div>
-			</button>
+			</Link>
 		</div>
 	</>
 )
@@ -161,23 +142,30 @@ const BlogPost = ({ data }: BlogPostProps) => {
 				<img
 					src={data.markdownRemark.frontmatter.image}
 					alt={data.markdownRemark.frontmatter.title}
+					className='mb-1'
 				/>
-				<em>{data.markdownRemark.frontmatter.imagedescription}</em>
+				<em className='mb-0'>
+					{data.markdownRemark.frontmatter.imagedescription}
+				</em>
 			</div>
 
-			<h1>{data.markdownRemark.frontmatter.title}</h1>
-			<p style={{ marginBottom: 0, marginTop: 0 }}>
-				<b>par {data.markdownRemark.frontmatter.author}</b>
-			</p>
-			<p style={{ marginTop: 0 }}>
-				<i>Publié le {clearDate}</i>
-			</p>
+			<h1 className='mt-3'>{data.markdownRemark.frontmatter.title}</h1>
+			<p className='mt-0 mb-1'>Publié le {clearDate}</p>
 
-			<ShareButtons data={data} />
-			<h3>{data.markdownRemark.frontmatter.description}</h3>
+			<div className='mt-3 mb-4'>
+				<ShareButtons data={data} />
+			</div>
+			<hr />
 			<div
+				className='my-4'
 				dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
 			/>
+			<hr />
+			<div className='mt-4 mb-4'>
+				Partagez cet article sur les réseaux sociaux :
+				<br />
+				<ShareButtons data={data} />
+			</div>
 		</Layout>
 	)
 }
