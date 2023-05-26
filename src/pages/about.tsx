@@ -55,11 +55,18 @@ const AboutPage = () => {
 					</a>
 					.
 				</p>
-				<h2 className='pt-4'>
-					Envie de collaborer ensemble ?
-				</h2>
-				<p>Je suis disponible pour différentes prestations de développement, de devOps ou de conseils à destination de tous types d'organisations ou entreprises.
-					N'hésitez pas à me contacter par <a href="mailto:pierre.fournier@protonmail.com">mail</a> ou sur <a href="https://www.linkedin.com/in/pierre-fournier-1b1b3b1b0/">LinkedIn</a>.
+				<h2 className='pt-4'>Envie de collaborer ensemble ?</h2>
+				<p>
+					Je suis disponible pour différentes prestations de
+					développement, de devOps ou de conseils à destination de
+					tous types d'organisations ou entreprises. N'hésitez pas à
+					me contacter par{' '}
+					<a href='mailto:pierre.fournier@protonmail.com'>mail</a> ou
+					sur{' '}
+					<a href='https://www.linkedin.com/in/pierre-fournier-1b1b3b1b0/'>
+						LinkedIn
+					</a>
+					.
 				</p>
 				<h4>Tarif journalier moyen : 400€ HT</h4>
 				<h2 className='pt-5'>Skills</h2>
@@ -71,7 +78,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/reactLogo.png'
 								alt='React logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>React</p>
 						</div>
@@ -82,7 +89,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/vueLogo.png'
 								alt='Vue logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Vue.js</p>
 						</div>
@@ -93,7 +100,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/nextjsLogo.png'
 								alt='Next.js logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Next.js</p>
 						</div>
@@ -104,7 +111,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/cypressLogo.png'
 								alt='Cypress logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Cypress</p>
 						</div>
@@ -119,7 +126,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/reactLogo.png'
 								alt='React-Native logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>React-Native</p>
 						</div>
@@ -130,7 +137,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/ionicLogo.png'
 								alt='Ionic logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Ionic</p>
 						</div>
@@ -141,7 +148,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/flutter.png'
 								alt='Flutter logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Flutter</p>
 						</div>
@@ -156,7 +163,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/nodeLogo.png'
 								alt='Node.js logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Node.js</p>
 						</div>
@@ -167,7 +174,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/railsLogo.png'
 								alt='Ruby on Rails logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Ruby on Rails</p>
 						</div>
@@ -178,6 +185,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/typescriptLogo.png'
 								alt='TypeScript logo'
 								placeholder='none'
+								height={55}
 							/>
 							<p>TypeScript</p>
 						</div>
@@ -192,7 +200,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/docker.png'
 								alt='Docker logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Docker</p>
 						</div>
@@ -203,7 +211,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/gitLogo.png'
 								alt='Git logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Git</p>
 						</div>
@@ -214,7 +222,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/githubLogo.png'
 								alt='Github logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Github Actions</p>
 						</div>
@@ -225,7 +233,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/terraformLogo.png'
 								alt='Terraform logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Terraform</p>
 						</div>
@@ -236,7 +244,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/gitlabLogo.png'
 								alt='Gitlab logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Gitlab CI/CD</p>
 						</div>
@@ -247,7 +255,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/azure_pipelines.png'
 								alt='Azure logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Azure Pipelines</p>
 						</div>
@@ -262,7 +270,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/postgresLogo.png'
 								alt='PostgreSQL logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>PostgreSQL</p>
 						</div>
@@ -273,7 +281,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/mysqlLogo.png'
 								alt='MySQL logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>MySQL</p>
 						</div>
@@ -284,7 +292,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/redisLogo.png'
 								alt='Redis logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>Redis</p>
 						</div>
@@ -295,7 +303,7 @@ const AboutPage = () => {
 								src='../assets/images/logo_skills/mongoLogo.png'
 								alt='MongoDB logo'
 								placeholder='none'
-								width={100}
+								height={55}
 							/>
 							<p>MongoDB</p>
 						</div>
