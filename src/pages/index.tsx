@@ -11,8 +11,9 @@ import { StaticImage } from 'gatsby-plugin-image'
 export const pageQuery = graphql`
 	query {
 		allMarkdownRemark(
-			filter: { frontmatter: { type: { eq: "blog" } } }
-			sort: { fields: frontmatter___date }
+			filter: { frontmatter: { type: { eq: "blog" } } },
+			sort: { fields: frontmatter___date, order: DESC },
+			limit: 10
 		) {
 			edges {
 				node {
