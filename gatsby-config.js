@@ -65,7 +65,7 @@ module.exports = {
 			resolve: 'gatsby-plugin-robots-txt',
 			options: {
 				host: 'https://www.pierrefournier.dev',
-				sitemap: 'https://www.pierrefournier.dev/sitemap/sitemap-0.xml',
+				sitemap: 'https://www.pierrefournier.dev/sitemap-index.xml',
 				policy: [{ userAgent: '*', allow: '/' }],
 			},
 		},
