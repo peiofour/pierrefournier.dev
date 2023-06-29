@@ -99,6 +99,7 @@ const IndexPage = ({ data: { allMarkdownRemark } }: IndexPageProps) => {
 						src='https://res.cloudinary.com/pierrefournier-dev/image/upload/v1684932586/about/IMG_0373_eml1fx.jpg'
 						alt='Pierre Fournier'
 						width={350}
+						placeholder='blurred'
 					/>
 				</div>
 				<div className='site-index__content'>

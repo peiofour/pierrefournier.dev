@@ -8,10 +8,10 @@ export function Head() {
 		<Seo
 			title={'À propos'}
 			description={
-				"Je m'appelle Pierre Fournier, j'ai 25 ans, je suis développeur fullstack freelance."
+				"Je m'appelle Pierre Fournier, j'ai 26 ans, je suis développeur fullstack en freelance."
 			}
 			image={
-				'https://res.cloudinary.com/pierrefournier-dev/image/upload/v1648208768/about/DSCF7848_nobjf9.jpg'
+				'https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_1055/v1662735743/about/9CE5CA18-B041-48D8-9487-288B8C74DD74_j0nyiu.png'
 			}
 			slug={'about'}
 			type='website'
@@ -35,11 +35,14 @@ const AboutPage = () => {
 		<Layout>
 			<div className='post site-about'>
 				<h1>hello, friend</h1>
-				<StaticImage
-					src='https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_1055/v1662735743/about/9CE5CA18-B041-48D8-9487-288B8C74DD74_j0nyiu.png'
-					alt='Portrait de Pierre Fournier'
-					width={600}
-				/>
+				<div className='site-about__portrait py-2'>
+					<StaticImage
+						src='https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_1055/v1662735743/about/9CE5CA18-B041-48D8-9487-288B8C74DD74_j0nyiu.png'
+						alt='Portrait de Pierre Fournier'
+						placeholder='blurred'
+						width={600}
+					/>
+				</div>
 				<p>Je m'appelle Pierre Fournier.</p>
 				<p>
 					Je suis développeur fullstack en freelance. J'ai 26 ans,
@@ -55,10 +58,10 @@ const AboutPage = () => {
 					</a>
 					.
 				</p>
-				<h2 className='pt-4'>Envie de collaborer ensemble ?</h2>
+				<h2 className='pt-4'>Envie de collaborer avec moi ?</h2>
 				<p>
 					Je suis disponible pour différentes prestations de
-					développement, de devOps ou de conseils à destination de
+					développement, de DevOps, de cloud ou de conseils à destination de
 					tous types d'organisations ou entreprises. N'hésitez pas à
 					me contacter par{' '}
 					<a href='mailto:pierre.fournier@protonmail.com'>mail</a> ou
