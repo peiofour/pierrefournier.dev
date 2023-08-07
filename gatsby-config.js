@@ -11,10 +11,10 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `Le blog de Pierre Fournier`,
-				short_name: `Le blog de Pierre Fournier`,
+				name: `Pierre Fournier - Développeur freelance à Toulouse`,
+				short_name: `Pierre Fournier`,
 				start_url: `/`,
-				description: `Je suis développeur fullstack en freelance, je vis à Toulouse dans le sud de la France. Ici je poste des articles de blog sur la tech, les startups, le numérique en France et dans le monde, et sur bien d'autres sujets.`,
+				description: `Je suis développeur freelance, je vis à Toulouse dans le sud de la France. Ici je publie des articles de blog sur la tech, les startups, la politique, le numérique en France et dans le monde.`,
 				background_color: `#edf6f9`,
 				theme_color: `#a2466c`,
 				display: `standalone`,
