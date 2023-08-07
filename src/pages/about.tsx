@@ -57,7 +57,7 @@ const AboutPage = () => {
 				<p>
 					Mon CV est disponible{' '}
 					<a
-						href='https://drive.google.com/file/d/1Rec2RRCfNpbQVw6rBqUymjLTy9QAqQXC/view?usp=sharing'
+						href='https://drive.google.com/file/d/1K6zk6tRDunSRphVcZX02TFpjIU1PS4sv/view?usp=sharing'
 						target='_blank'
 					>
 						ici

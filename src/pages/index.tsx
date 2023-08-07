@@ -68,7 +68,6 @@ export function Head() {
 	)
 }
 
-// const MaltIcon = require('../assets/svg/malt.svg') as React.FunctionComponent<React.SVGAttributes<SVGElement>>
 
 interface IndexPageProps {
 	data: {
