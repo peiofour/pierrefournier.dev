@@ -12,8 +12,8 @@ interface SeoProps {
 const Seo = ({ title, description, image, keywords, slug, type }: SeoProps) => {
 	const lastTitle =
 		title === undefined
-			? 'Le blog de Pierre Fournier'
-			: `${title} - Le blog de Pierre Fournier`
+			? 'Pierre Fournier - Développeur freelance à Toulouse'
+			: `${title} - Pierre Fournier`
 	return (
 		<>
       <html lang='fr' />

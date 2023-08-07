@@ -37,7 +37,7 @@ const Header = () => {
 		<header className='header'>
 			<div className='site-header'>
 				<div className='site-header__title'>
-					<Link to='/'>pierre</Link>
+					<Link to='/'>pierre.</Link>
 				</div>
 
 				<nav>

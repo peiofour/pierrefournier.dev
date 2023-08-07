@@ -11,7 +11,7 @@ export function Head() {
 				"Je m'appelle Pierre Fournier, j'ai 26 ans, je suis développeur fullstack en freelance."
 			}
 			image={
-				'https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_1055/v1662735743/about/9CE5CA18-B041-48D8-9487-288B8C74DD74_j0nyiu.png'
+				'https://res.cloudinary.com/pierrefournier-dev/image/upload/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.jpg'
 			}
 			slug={'about'}
 			type='website'
@@ -25,6 +25,8 @@ export function Head() {
 				'tech',
 				'startup',
 				'politique',
+				'numérique',
+				'France',
 			]}
 		/>
 	)
@@ -37,36 +39,42 @@ const AboutPage = () => {
 				<h1>hello, friend</h1>
 				<div className='site-about__portrait py-2'>
 					<StaticImage
-						src='https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_1055/v1662735743/about/9CE5CA18-B041-48D8-9487-288B8C74DD74_j0nyiu.png'
+						src='https://res.cloudinary.com/pierrefournier-dev/image/upload/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.jpg'
 						alt='Portrait de Pierre Fournier'
 						placeholder='blurred'
-						width={600}
+						width={500}
+						height={350}
 					/>
 				</div>
 				<p>Je m'appelle Pierre Fournier.</p>
 				<p>
-					Je suis développeur fullstack en freelance. J'ai 26 ans,
-					j'habite à Toulouse, dans le sud de la France et je suis
-					originaire du Pays Basque. Je suis passionné par de nombreux
-					sujets : la tech, les startups, la politique, le cinéma, la
-					photographie, la cuisine, l'histoire et l'astronomie.
+					Je suis développeur fullstack en freelance. J'ai 26 ans et j'habite à
+					Toulouse. Je développe des applications web et mobiles, des API, des
+					infrastructures métier back-end et des applications de bureau. Je
+					propose également des prestations de DevOps et de cloud (AWS, Azure,
+					GCP, OVH Cloud, Scaleway).
 				</p>
 				<p>
 					Mon CV est disponible{' '}
-					<a href='https://drive.google.com/file/d/119SGrsGAWo9syNnZZoHQt6d_SFdKuX-l/view?usp=sharing'>
+					<a
+						href='https://drive.google.com/file/d/1Rec2RRCfNpbQVw6rBqUymjLTy9QAqQXC/view?usp=sharing'
+						target='_blank'
+					>
 						ici
 					</a>
 					.
 				</p>
 				<h2 className='pt-4'>Envie de collaborer avec moi ?</h2>
 				<p>
-					Je suis disponible pour différentes prestations de
-					développement, de DevOps, de cloud ou de conseils à destination de
-					tous types d'organisations ou entreprises. N'hésitez pas à
-					me contacter par{' '}
-					<a href='mailto:pierre.fournier@protonmail.com'>mail</a> ou
-					sur{' '}
-					<a href='https://www.linkedin.com/in/pierrefournier1/' target='_blank' rel='noreferrer'>
+					Je suis disponible pour différentes prestations de développement, de
+					DevOps, de cloud ou de conseils à destination de tous types
+					d'organisations ou entreprises. N'hésitez pas à me contacter par{' '}
+					<a href='mailto:pierre.fournier@protonmail.com'>mail</a> ou sur{' '}
+					<a
+						href='https://www.linkedin.com/in/pierrefournier1/'
+						target='_blank'
+						rel='noreferrer'
+					>
 						LinkedIn
 					</a>
 					.
