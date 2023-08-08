@@ -321,6 +321,10 @@ footer {
 .site-about {
 	text-align: center;
 
+	p {
+		text-align: left;
+	}
+
 	img {
 		margin-left: auto;
 		margin-right: auto;
@@ -458,4 +462,26 @@ footer {
 
 .icon {
 	vertical-align: middle;
+}
+
+.portfolio {
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	&__item {
+		margin-bottom: 30px;
+		width: 100%;
+		max-width: 300px;
+		transition: transform 0.2s;
+		&:hover {
+			transform: scale(1.1);
+		}
+		img {
+			width: 100%;
+			border-radius: 12px;
+		}
+	}
 }

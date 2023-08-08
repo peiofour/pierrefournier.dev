@@ -37,7 +37,7 @@ const AboutPage = () => {
 		<Layout>
 			<div className='post site-about'>
 				<h1>hello, friend</h1>
-				<div className='site-about__portrait py-2'>
+				<div className='site-about__portrait pt-3 pb-5'>
 					<StaticImage
 						src='https://res.cloudinary.com/pierrefournier-dev/image/upload/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.jpg'
 						alt='Portrait de Pierre Fournier'
@@ -48,11 +48,45 @@ const AboutPage = () => {
 				</div>
 				<p>Je m'appelle Pierre Fournier.</p>
 				<p>
-					Je suis développeur fullstack en freelance. J'ai 26 ans et j'habite à
-					Toulouse. Je développe des applications web et mobiles, des API, des
-					infrastructures métier back-end et des applications de bureau. Je
-					propose également des prestations de DevOps et de cloud (AWS, Azure,
-					GCP, OVH Cloud, Scaleway).
+					Passionné par le développement et les nouvelles technologies, je suis
+					un développeur Full Stack indépendant basé à Toulouse avec plus de 5
+					ans d'expérience dans la création d'applications web et mobiles sur
+					mesure.
+				</p>
+
+				<p>
+					J'ai une solide expertise en React, Vue, Node.js et Ruby on Rails, ce
+					qui me permet d'accompagner mes clients dans la concrétisation de
+					leurs projets et de leur apporter des solutions efficaces et
+					performantes.
+				</p>
+
+				<p>
+					Mon engagement envers la réussite de vos projets :
+					<br />
+					- Analyse approfondie de vos besoins et attentes pour une meilleure
+					compréhension de vos objectifs.
+					<br />
+					- Proposition de solutions techniques adaptées et personnalisées.
+					<br />
+					- Développement d'applications web et mobiles performantes, sécurisées
+					et évolutives.
+					<br />
+					- Mise en place de tests automatisés et d'intégration continue pour
+					garantir la qualité du code.
+					<br />
+					- Accompagnement dans le déploiement de l'application et la
+					maintenance.
+					<br />- Écriture de documentations pour garantir la maintenance du
+					code sur le temps long.
+				</p>
+				<p>
+					Je peux aussi intervenir dans un cadre moins technique, pour
+					conseiller sur l'ergonomie et la conception de sites.
+				</p>
+				<p>
+					🇫🇷🇬🇧 J'ai une bonne maîtrise de l'anglais, je peux travailler sans
+					soucis en Français comme en Anglais.
 				</p>
 				<p>
 					Mon CV est disponible{' '}
@@ -65,10 +99,8 @@ const AboutPage = () => {
 					.
 				</p>
 				<h2 className='pt-4'>Envie de collaborer avec moi ?</h2>
-				<p>
-					Je suis disponible pour différentes prestations de développement, de
-					DevOps, de cloud ou de conseils à destination de tous types
-					d'organisations ou entreprises. N'hésitez pas à me contacter par{' '}
+				<p className='text-center'>
+					N'hésitez pas à me contacter par{' '}
 					<a href='mailto:pierre.fournier@protonmail.com'>mail</a> ou sur{' '}
 					<a
 						href='https://www.linkedin.com/in/pierrefournier1/'
