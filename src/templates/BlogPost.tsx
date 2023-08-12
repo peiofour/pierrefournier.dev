@@ -161,11 +161,10 @@ const BlogPost = ({ data }: BlogPostProps) => {
 				dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
 			/>
 			<hr />
-			<div className='mt-4 mb-4'>
-				Partagez cet article sur les réseaux sociaux :
-				<br />
-				<ShareButtons data={data} />
-			</div>
+			<p className='mt-4 mb-2'>
+				Partagez cet article sur les réseaux sociaux :				
+			</p>
+			<ShareButtons data={data} />
 		</Layout>
 	)
 }

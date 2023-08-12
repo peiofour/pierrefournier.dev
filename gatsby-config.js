@@ -32,7 +32,6 @@ module.exports = {
 				path: `${__dirname}/src/data`,
 			},
 		},
-		`gatsby-transformer-remark`,
 		{
 			resolve: `gatsby-plugin-google-gtag`,
 			options: {
@@ -67,6 +66,20 @@ module.exports = {
 				host: 'https://www.pierrefournier.dev',
 				sitemap: 'https://www.pierrefournier.dev/sitemap-index.xml',
 				policy: [{ userAgent: '*', allow: '/' }],
+			},
+		},
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				plugins: [
+					{
+						resolve: `gatsby-remark-highlight-code`,
+						options: {
+							terminal: 'carbon',
+							theme: 'one dark',
+						},
+					},
+				],
 			},
 		},
 	],

@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import '../assets/scss/style.scss'
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
 
 interface LayoutProps {
 	children: React.ReactNode

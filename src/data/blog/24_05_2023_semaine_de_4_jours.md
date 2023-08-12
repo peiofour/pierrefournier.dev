@@ -2,7 +2,7 @@
 title: "Pourquoi la semaine de 4 jours est une opportunité pour la France"
 description: "La crise sanitaire a bouleversé nos modes de vie et de travail. Elle nous a aussi montré que nous pouvons nous adapter à des situations inédites et repenser nos priorités. Parmi les pistes de réflexion qui ont émergé, celle de la semaine de quatre jours a suscité un intérêt croissant, tant chez les salariés que chez les employeurs."
 slug: "pourquoi-la-semaine-de-4-jours-est-une-opportunite-pour-la-france"
-date: "May 26 2023 12:00:00 GMT+0100"
+date: "05/23/2023"
 type: "blog"
 keywords: ["Politique", "Semaine de 4 jours", "quatre jours", "semaine de quatre jours", "Social", "Réforme Social", "Macron", "Renaissance", "Jeunes avec Macron", "France"]
 image: "https://res.cloudinary.com/pierrefournier-dev/image/upload/v1684939540/blog/charlie-chaplin-dans-les-temps-modernes_cchxt7.jpg"

@@ -60,9 +60,14 @@ h6 {
 	margin-top: 1.5rem;
 }
 
-p {
+p, li {
 	margin-top: 0;
 	margin-bottom: 1rem;
+	font-size: var(--size-500);
+
+	@media screen and (max-width: 768px) {
+		font-size: var(--size-400);
+	}
 }
 
 header {
@@ -273,7 +278,6 @@ footer {
 	margin-right: auto;
 	max-width: 85ch;
 	word-wrap: break-word;
-	font-size: 20px;
 	padding-bottom: 30px;
 
 	img {
@@ -308,14 +312,7 @@ footer {
 		margin-bottom: 20px;
 		font-size: 17px;
 	}
-	@media screen and (max-width: 1000px) {
-		h1 {
-			font-size: 1.6em !important;
-		}
-		h3 {
-			font-size: 1.1em !important;
-		}
-	}
+	
 }
 
 .site-about {
@@ -351,6 +348,9 @@ footer {
 	}
 
 	&__skills {
+		p {
+			text-align: center;
+		}
 		li {
 			transition: transform 0.2s;
 			&:hover {
@@ -483,5 +483,14 @@ footer {
 			width: 100%;
 			border-radius: 12px;
 		}
+	}
+}
+
+deckgo-highlight-code {
+	font-size: 15px;
+	margin: 40px 0;
+
+	@media screen and (max-width: 768px) {
+		font-size: 10px;
 	}
 }
