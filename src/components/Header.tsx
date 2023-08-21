@@ -12,6 +12,10 @@ const MenuItems = [
 		path: '/about',
 		title: 'À propos',
 	},
+	{
+		path: '/portfolio',
+		title: 'Portfolio',
+	}
 ]
 
 interface ListLinkProps {

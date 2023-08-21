@@ -11,3 +11,15 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: "Circular Std Medium";
+	font-style: normal;
+	font-weight: medium;
+	src: url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot");
+	src: url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.eot?#iefix")format("embedded-opentype"),
+	url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.woff2")format("woff2"),
+	url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.woff")format("woff"),
+	url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.ttf")format("truetype"),
+	url("https://db.onlinewebfonts.com/t/9475d6a0b79c164f9f605673714e75d9.svg#Circular Std Medium")format("svg");
+}
