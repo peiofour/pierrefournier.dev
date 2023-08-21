@@ -101,13 +101,9 @@ header {
 	padding-right: 15px;
 	margin-bottom: 80px;
 	height: 100%;
+	opacity: 0;
 	// opacity transition 
 	transition: opacity 0.4s ease-in-out;
-}
-
-.container-transition {
-	// page to be blurred
-	opacity: 0;
 }
 
 .site-header {

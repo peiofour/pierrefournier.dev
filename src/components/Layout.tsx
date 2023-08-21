@@ -21,8 +21,7 @@ const Layout = ({ children, className }: LayoutProps) => {
 	useEffect(() => {
 		const container = document.querySelector('.container')
 		if (container) {
-			container.style.opacity = '0'
-			setTimeout(() => {
+			window.setTimeout(() => {
 				container.style.opacity = '1'
 			}, 100)
 		}
