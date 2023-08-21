@@ -19,10 +19,13 @@ const Layout = ({ children, className }: LayoutProps) => {
 
 	// on children change, add smooth transition to container class
 	useEffect(() => {
-		document.querySelector('.container')?.classList.add('container-transition')
-		setTimeout(() => {
-			document.querySelector('.container')?.classList.remove('container-transition')
-		}, 1)
+		const container = document.querySelector('.container')
+		if (container) {
+			container.style.opacity = '0'
+			setTimeout(() => {
+				container.style.opacity = '1'
+			}, 100)
+		}
 	}, [children])
 	
 
