@@ -20,6 +20,7 @@ const Seo = ({ title, description, image, keywords, slug, type }: SeoProps) => {
 			<title>{lastTitle}</title>
 			<meta name='description' content={description} />
 			<meta property='og:title' content={lastTitle} />
+			<meta property='og:locale' content='fr_FR' />
 			<meta
 				property='og:url'
 				content={`https://www.pierrefournier.dev/${slug}`}
@@ -27,9 +28,10 @@ const Seo = ({ title, description, image, keywords, slug, type }: SeoProps) => {
 			<meta property='og:description' content={description} />
 			<meta property='og:type' content={type ?? 'website'} />
 			<meta property='og:image' content={image} />
-			<meta property='og:site_name' content='Le blog de Pierre' />
+			<meta property='og:site_name' content='Pierre Fournier - Développeur freelance à Toulouse' />
+			<meta name='twitter:site' content='@_pierrefournier' />
 			<meta name='twitter:card' content='summary_large_image' />
-			<meta name='twitter:creator' content='peiofour' />
+			<meta name='twitter:creator' content='@_pierrefournier' />
 			<meta name='twitter:title' content={lastTitle} />
 			<meta
 				name='twitter:url'
