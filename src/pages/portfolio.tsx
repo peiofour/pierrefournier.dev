@@ -20,6 +20,7 @@ export function Head() {
 		<Seo
 			title='Portfolio'
 			description='Portfolio de Pierre Fournier, développeur freelance à Toulouse.'
+			image='https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_1566,q_100/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.webp'
 			keywords={[
 				'portfolio',
 				'pierre',

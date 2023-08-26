@@ -11,7 +11,7 @@ export function Head() {
 				"Je m'appelle Pierre Fournier, j'ai 26 ans, je suis développeur fullstack en freelance."
 			}
 			image={
-				'https://res.cloudinary.com/pierrefournier-dev/image/upload/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.jpg'
+				'https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_1566,q_100/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.webp'
 			}
 			slug={'about'}
 			type='website'
@@ -39,7 +39,7 @@ const AboutPage = () => {
 				<h1>hello, friend</h1>
 				<div className='site-about__portrait pt-3 pb-5'>
 					<StaticImage
-						src='https://res.cloudinary.com/pierrefournier-dev/image/upload/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.jpg'
+						src='https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_1566,q_100/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.webp'
 						alt='Portrait de Pierre Fournier'
 						placeholder='blurred'
 						width={500}

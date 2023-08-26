@@ -45,7 +45,7 @@ export function Head() {
 		<Seo
 			description={content.text}
 			image={
-				'https://res.cloudinary.com/pierrefournier-dev/image/upload/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.jpg'
+				'https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_1566,q_100/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.webp'
 			}
 			keywords={[
 				'pierre fournier',
@@ -95,7 +95,7 @@ const IndexPage = ({ data: { allMarkdownRemark } }: IndexPageProps) => (
 		<div className='site-index flex-row'>
 			<div className='site-index__image'>
 				<StaticImage
-					src='https://res.cloudinary.com/pierrefournier-dev/image/upload/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.jpg'
+					src='https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_1566,q_100/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.webp'
 					alt='Pierre Fournier'
 					width={350}
 					placeholder='blurred'

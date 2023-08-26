@@ -8,7 +8,6 @@ module.exports = {
 		title: `Pierre Fournier - Développeur freelance à Toulouse`,
 		description: `Je suis développeur freelance, je vis à Toulouse dans le sud de la France. Ici je publie des articles de blog sur la tech, les startups, la politique, le numérique en France et dans le monde.`,
 	},
-	trailingSlash: "never",
 	plugins: [
 		`gatsby-plugin-sitemap`,
 		{

@@ -5,7 +5,7 @@ slug: "pourquoi-la-semaine-de-4-jours-est-une-opportunite-pour-la-france"
 date: "05/23/2023"
 type: "blog"
 keywords: ["Politique", "Semaine de 4 jours", "quatre jours", "semaine de quatre jours", "Social", "Réforme Social", "Macron", "Renaissance", "Jeunes avec Macron", "France"]
-image: "https://res.cloudinary.com/pierrefournier-dev/image/upload/v1684939540/blog/charlie-chaplin-dans-les-temps-modernes_cchxt7.jpg"
+image: "https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_526,q_auto:best/v1684939540/blog/charlie-chaplin-dans-les-temps-modernes_cchxt7.webp"
 imagedescription: "Les temps modernes, Charlie Chaplin - 1936"
 author: "Pierre Fournier"
 ---
