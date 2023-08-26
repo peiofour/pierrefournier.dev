@@ -1,5 +1,5 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+require('dotenv').config({
+	path: `.env.${process.env.NODE_ENV}`,
 })
 
 module.exports = {
@@ -8,6 +8,7 @@ module.exports = {
 		title: `Pierre Fournier - Développeur freelance à Toulouse`,
 		description: `Je suis développeur freelance, je vis à Toulouse dans le sud de la France. Ici je publie des articles de blog sur la tech, les startups, la politique, le numérique en France et dans le monde.`,
 	},
+	trailingSlash: 'never',
 	plugins: [
 		`gatsby-plugin-sitemap`,
 		{
@@ -39,17 +40,17 @@ module.exports = {
 			options: {
 				// You can add multiple tracking ids and a pageview event will be fired for all of them.
 				trackingIds: [
-					process.env.GOOGLE_ANALYTICS_ID, // Google Analytics / GA
+					// process.env.GOOGLE_ANALYTICS_ID, // Google Analytics / GA
 					// "AW-CONVERSION_ID", // Google Ads / Adwords / AW
 					// "DC-FLOODIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
 				],
 				// This object gets passed directly to the gtag config command
 				// This config will be shared across all trackingIds
-				// gtagConfig: {
-				//   optimize_id: "OPT_CONTAINER_ID",
-				//   anonymize_ip: true,
-				//   cookie_expires: 0,
-				// },
+				gtagConfig: {
+					//   optimize_id: "OPT_CONTAINER_ID",
+					anonymize_ip: true,
+					//   cookie_expires: 0,
+				},
 				// This object is used for configuration specific to this plugin
 				pluginConfig: {
 					// Puts tracking script in the head instead of the body
