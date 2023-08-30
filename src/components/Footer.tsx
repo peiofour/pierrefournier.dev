@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { BsFillHeartFill } from '@react-icons/all-files/bs/BsFillHeartFill'
 import { BsCodeSlash } from '@react-icons/all-files/bs/BsCodeSlash'
 
 const Footer = () => (
 	<footer>
 		<div className='site-footer'>
-			<p>
+			<div>
 				<span className='icon'>
 					<BsCodeSlash />
 				</span>{' '}
@@ -14,7 +15,13 @@ const Footer = () => (
 					<BsFillHeartFill />
 				</span>{' '}
 				by Pierre Fournier
-			</p>
+			</div>
+			<div>
+				<Link style={{
+					textDecoration: 'none',
+					color: 'var(--textNormal)',
+				}} to='/privacy'>Politique de confidentialité</Link>
+			</div>
 		</div>
 	</footer>
 )
