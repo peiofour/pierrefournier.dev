@@ -101,7 +101,7 @@ const AboutPage = () => {
 				<h2 className='pt-4'>Envie de collaborer avec moi ?</h2>
 				<p className='text-center'>
 					N'hésitez pas à me contacter par{' '}
-					<a href='mailto:pierre.fournier@protonmail.com'>mail</a> ou sur{' '}
+					<a href='mailto:contact@pierrefournier.dev'>mail</a> ou sur{' '}
 					<a
 						href='https://www.linkedin.com/in/pierrefournier1/'
 						target='_blank'

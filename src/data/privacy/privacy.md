@@ -26,7 +26,7 @@ Pour exercer ces droits, veuillez nous contacter en utilisant les coordonnées f
 
 ### Contactez-nous
 
-Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité ou notre traitement de vos données personnelles, veuillez nous contacter à <pierre.fournier@protonmail.com>.
+Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité ou notre traitement de vos données personnelles, veuillez nous contacter à <contact@pierrefournier.dev>.
 
 ### Modifications apportées à cette politique
 
