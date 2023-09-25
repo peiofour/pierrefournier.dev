@@ -25,7 +25,7 @@ const Layout = ({ children, className }: LayoutProps) => {
 	}, [children])
 
 	return (
-		<div className='min-h-screen flex flex-col relative'>
+		<div className='min-h-screen flex flex-col relative bg-[#edf6f9] text-[#333]'>
 			<Header />
 			<main className={className}>
 				<div

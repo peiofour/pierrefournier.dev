@@ -17,14 +17,16 @@ const BlogCard = ({ link, title, subtitle, image, date }: BlogCardProps) => {
 	})
 	return (
 		<div
-			className='max-w-xs border-solid border-[1px] border-[#00000014] shadow-md rounded-xl my-3 mx-auto cursor-pointer'
+			className='max-w-xs border-solid border-[1px] border-[#00000014] shadow-md rounded-xl my-3 mx-auto cursor-pointer w-[300px] h-[500px]'
 			onClick={() => navigate(link)}
 		>
-			<img className='rounded-t-xl' src={image} alt={title} height={200} />
-			<div className='px-4 py-2'>
-				<h2 className='mt-3 mb-0'>{title}</h2>
-				<h4 className='mt-2'>{dateLocale}</h4>
-				<p className=''>
+			<img className='rounded-t-xl h-[200px] object-cover' src={image} alt={title} height={200} />
+			<div className='px-4 py-3 gap-4 flex flex-col'>
+				<div>
+					<h2 className='text-xl font-bold'>{title}</h2>
+					<h6 className='text-base font-medium'>{dateLocale}</h6>
+				</div>
+				<p className='text-[18px] '>
 					<div dangerouslySetInnerHTML={{ __html: subtitle }} />
 				</p>
 			</div>

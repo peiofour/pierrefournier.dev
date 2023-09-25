@@ -15,7 +15,7 @@ const MenuItems = [
 	{
 		path: '/portfolio',
 		title: 'Portfolio',
-	}
+	},
 ]
 
 interface ListLinkProps {
@@ -38,24 +38,18 @@ const Header = () => {
 	const [showMenu, setShowMenu] = useState(false)
 
 	return (
-		<header className='header'>
-			<div className='site-header'>
-				<div className='site-header__title'>
-					<Link to='/'>pierre.</Link>
-				</div>
-
-				<nav>
-					<button
-						className='menu-icon'
-						onClick={() => setShowMenu(!showMenu)}
-					>
-						{showMenu ? <BsListNested /> : <BsList />}
-					</button>
-					<ul className={showMenu ? 'menu-show' : 'menu-close'}>
-						{listMenuItems}
-					</ul>
-				</nav>
-			</div>
+		<header className='p-4 flex items-center mb-10'>
+			<Link className='text-4xl font-extrabold no-underline flex-1' to='/'>
+				pierre.
+			</Link>
+			<nav className='static p-0 bg-transparent font-bold flex-0'>
+				<button className=' block lg:hidden menu-icon' onClick={() => setShowMenu(!showMenu)}>
+					{showMenu ? <BsListNested /> : <BsList />}
+				</button>
+				<ul className='hidden lg:flex gap-6'>
+					{listMenuItems}
+				</ul>
+			</nav>
 		</header>
 	)
 }
