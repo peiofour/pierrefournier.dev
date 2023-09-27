@@ -52,64 +52,54 @@ interface BlogPostProps {
 }
 
 const ShareButtons = ({ data }: BlogPostProps) => (
-	<>
-		<div className='share-buttons'>
-			<Link
-				to={`https://twitter.com/share?url=https://www.pierrefournier.dev/blog/${
-					data.markdownRemark.frontmatter.slug
-				}&text=${
-					'"' +
-					data.markdownRemark.frontmatter.title +
-					'" - Le Blog de Pierre'
-				}`}
-				target='_blank'
-			>
-				<RiTwitterFill size={25} />
-			</Link>
-			<Link
-				to={`https://www.facebook.com/sharer.php?u=https://www.pierrefournier.dev/blog/${
-					data.markdownRemark.frontmatter.slug
-				}&t=${
-					'"' +
-					data.markdownRemark.frontmatter.title +
-					'" - Le Blog de Pierre'
-				}`}
-				target='_blank'
-			>
-				<RiFacebookFill size={25} />
-			</Link>
-			<Link
-				to={`https://t.me/share/url?url=https://www.pierrefournier.dev/blog/${
-					data.markdownRemark.frontmatter.slug
-				}&text=${
-					'"' +
-					data.markdownRemark.frontmatter.title +
-					'" - Le Blog de Pierre'
-				}`}
-				target='_blank'
-			>
-				<RiTelegramFill size={25} />
-			</Link>
-			<Link
-				to={`https://wa.me/?text=https://www.pierrefournier.dev/blog/${data.markdownRemark.frontmatter.slug}`}
-				target='_blank'
-			>
-				<RiWhatsappFill size={25} />
-			</Link>
-			<Link
-				to={`https://www.linkedin.com/shareArticle?mini=true&url=https://www.pierrefournier.dev/blog/${
-					data.markdownRemark.frontmatter.slug
-				}&title=${
-					'"' +
-					data.markdownRemark.frontmatter.title +
-					'" - Le Blog de Pierre'
-				}`}
-				target='_blank'
-			>
-				<RiLinkedinFill size={25} />
-			</Link>
-		</div>
-	</>
+	<div className='flex gap-2'>
+		<Link
+			to={`https://twitter.com/share?url=https://www.pierrefournier.dev/blog/${
+				data.markdownRemark.frontmatter.slug
+			}&text=${
+				'"' + data.markdownRemark.frontmatter.title + '" - Le Blog de Pierre'
+			}`}
+			target='_blank'
+		>
+			<RiTwitterFill size={25} />
+		</Link>
+		<Link
+			to={`https://www.facebook.com/sharer.php?u=https://www.pierrefournier.dev/blog/${
+				data.markdownRemark.frontmatter.slug
+			}&t=${
+				'"' + data.markdownRemark.frontmatter.title + '" - Le Blog de Pierre'
+			}`}
+			target='_blank'
+		>
+			<RiFacebookFill size={25} />
+		</Link>
+		<Link
+			to={`https://t.me/share/url?url=https://www.pierrefournier.dev/blog/${
+				data.markdownRemark.frontmatter.slug
+			}&text=${
+				'"' + data.markdownRemark.frontmatter.title + '" - Le Blog de Pierre'
+			}`}
+			target='_blank'
+		>
+			<RiTelegramFill size={25} />
+		</Link>
+		<Link
+			to={`https://wa.me/?text=https://www.pierrefournier.dev/blog/${data.markdownRemark.frontmatter.slug}`}
+			target='_blank'
+		>
+			<RiWhatsappFill size={25} />
+		</Link>
+		<Link
+			to={`https://www.linkedin.com/shareArticle?mini=true&url=https://www.pierrefournier.dev/blog/${
+				data.markdownRemark.frontmatter.slug
+			}&title=${
+				'"' + data.markdownRemark.frontmatter.title + '" - Le Blog de Pierre'
+			}`}
+			target='_blank'
+		>
+			<RiLinkedinFill size={25} />
+		</Link>
+	</div>
 )
 
 export function Head({ data }: BlogPostProps) {
@@ -137,32 +127,28 @@ const BlogPost = ({ data }: BlogPostProps) => {
 	).toLocaleDateString('fr-FR', options)
 
 	return (
-		<Layout className='post'>
-			<div className='post__head-image'>
+		<Layout className='max-w-[900px] flex flex-col gap-3'>
+			<div>
 				<img
 					src={data.markdownRemark.frontmatter.image}
 					alt={data.markdownRemark.frontmatter.title}
-					className='mb-1'
+					className='mb-2 -mx-4 md:mx-0 w-screen md:w-full max-w-none md:rounded-xl'
 				/>
-				<em className='mb-0'>
-					{data.markdownRemark.frontmatter.imagedescription}
-				</em>
+				<em>{data.markdownRemark.frontmatter.imagedescription}</em>
 			</div>
-
-			<h1 className='mt-3'>{data.markdownRemark.frontmatter.title}</h1>
-			<p className='mt-0 mb-1'>Publié le {clearDate}</p>
-
-			<div className='mt-3 mb-4'>
-				<ShareButtons data={data} />
+			<div>
+				<h1 className='mt-3'>{data.markdownRemark.frontmatter.title}</h1>
+				<p className='mt-0 mb-1'>Publié le {clearDate}</p>
 			</div>
+			<ShareButtons data={data} />
 			<hr />
 			<div
-				className='my-4'
+				className='post py-7'
 				dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
 			/>
 			<hr />
-			<p className='mt-4 mb-2'>
-				Partagez cet article sur les réseaux sociaux :				
+			<p className=''>
+				Partagez cet article sur les réseaux sociaux :
 			</p>
 			<ShareButtons data={data} />
 		</Layout>

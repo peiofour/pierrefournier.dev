@@ -30,13 +30,12 @@ const PortfolioPage = ({ data: { allMarkdownRemark } }) => {
 			<div className='post site-about'>
 				<h1>Politique de confidentialité</h1>
 			</div>
-			<div className='post'>
-				<div
-					dangerouslySetInnerHTML={{
-						__html: allMarkdownRemark.edges[0].node.html,
-					}}
-				></div>
-			</div>
+			<div
+				className='post'
+				dangerouslySetInnerHTML={{
+					__html: allMarkdownRemark.edges[0].node.html,
+				}}
+			></div>
 		</Layout>
 	)
 }

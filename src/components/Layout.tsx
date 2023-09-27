@@ -4,6 +4,9 @@ import Footer from './Footer'
 import '../assets/scss/style.scss'
 import '../styles/global.css'
 
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
+deckDeckGoHighlightElement()
+
 interface LayoutProps {
 	children: React.ReactNode
 	className?: string
@@ -27,13 +30,11 @@ const Layout = ({ children, className }: LayoutProps) => {
 	return (
 		<div className='min-h-screen flex flex-col relative bg-[#edf6f9] text-[#333]'>
 			<Header />
-			<main className={className}>
-				<div
-					id='layout'
-					className='mx-auto max-w-7xl px-4 mb-20 h-full block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out'
-				>
-					{children}
-				</div>
+			<main
+				className={`px-4 self-center max-w-7xl pt-4 pb-20 h-full block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out ${className}`}
+				id='layout'
+			>
+				{children}
 			</main>
 			<Footer />
 		</div>

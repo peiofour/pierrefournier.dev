@@ -40,16 +40,16 @@ export function Head() {
 const PortfolioPage = ({ data: { allMarkdownRemark } }) => {
 	return (
 		<Layout>
-			<div className='post site-about'>
-				<h1>Portfolio</h1>
-				<img src='' alt='' />
-				<p>
-					Vous trouverez ici les projets que j'ai réalisé en tant que freelance,
-					en tant que salarié, ainsi que mes projets personnels.
-				</p>
-			</div>
-			<div className='post'>
+			<div className='max-w-4xl flex flex-col gap-10'>
+				<div className='flex flex-col gap-5'>
+					<h1 className='text-center'>Portfolio</h1>
+					<p>
+						Vous trouverez ici les projets que j'ai réalisé en tant que
+						freelance, en tant que salarié, ainsi que mes projets personnels.
+					</p>
+				</div>
 				<div
+					className='post'
 					dangerouslySetInnerHTML={{
 						__html: allMarkdownRemark.edges[0].node.html,
 					}}

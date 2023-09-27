@@ -91,39 +91,46 @@ interface IndexPageProps {
 }
 
 const IndexPage = ({ data: { allMarkdownRemark } }: IndexPageProps) => (
-	<Layout>
-		<div className='site-index flex-row'>
-			<div className='site-index__image'>
-				<StaticImage
-					src='https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_1566,q_100/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.webp'
-					alt='Pierre Fournier'
-					width={350}
-					placeholder='blurred'
-				/>
-			</div>
-			<div className='site-index__content'>
+	<Layout className='flex flex-col gap-7'>
+		<div className='flex items-center flex-col lg:flex-row justify-around'>
+			<StaticImage
+				src='https://res.cloudinary.com/pierrefournier-dev/image/upload/c_scale,h_1566,q_100/v1691334155/4F7A6F07-9294-4BC2-BEA5-8B4F9E9E8C3F-1227-000000C3A1705D79-min_ucmyu0.webp'
+				alt='Pierre Fournier'
+				placeholder='blurred'
+				className='rounded-full max-w-xs'
+			/>
+			<div className='space-y-6 max-w-[600px] lg:max-w-[55%] text-center lg:text-left'>
 				<h1>{content.title}</h1>
 				<p>{content.text}</p>
-				<p>Collaborez avec moi ⬇️</p>
-				<div className='site-index__content--button'>
-					<Link to='/about' className='button'>
+				<h4>Collaborez avec moi ⬇️</h4>
+				<div>
+					<Link
+						to='/about'
+						className='text-white text-lg font-medium no-underline bg-[#ff1e56] hover:bg-[#ff1e56a1] p-[15px] rounded-xl transition-all duration-300 ease-in-out'
+					>
 						{content.more}
 					</Link>
 				</div>
 
-				<div className='site-index__content--social-icons'>
+				<div className='flex gap-3 text-3xl py-6 justify-center lg:justify-start '>
 					<Link
 						to='https://www.linkedin.com/in/pierrefournier1'
 						target='_blank'
+						className='hover:text-[#ff1e56a1] transition-all duration-300 ease-in-out'
 					>
 						<RiLinkedinFill className='svg_icon' />
 					</Link>
-					<Link to='https://github.com/peiofour' target='_blank'>
+					<Link
+						to='https://github.com/peiofour'
+						target='_blank'
+						className='hover:text-[#ff1e56a1] transition-all duration-300 ease-in-out'
+					>
 						<RiGithubFill className='svg_icon' />
 					</Link>
 					<Link
 						to='https://www.malt.fr/profile/pierrefournier2'
 						target='_blank'
+						className='hover:text-[#ff1e56a1] transition-all duration-300 ease-in-out'
 					>
 						<svg
 							stroke='currentColor'
@@ -155,21 +162,22 @@ const IndexPage = ({ data: { allMarkdownRemark } }: IndexPageProps) => (
 			</div>
 		</div>
 
-		<h2 className='text-center'>Derniers posts</h2>
-
-		<ul className='card-list row justify-content-center px-0'>
-			{allMarkdownRemark.edges.map((edge) => (
-				<li className='col-10 col-md d-flex'>
-					<BlogCard
-						title={edge.node.frontmatter.title}
-						subtitle={edge.node.excerpt}
-						date={edge.node.frontmatter.date}
-						image={edge.node.frontmatter.image}
-						link={`blog/${edge.node.frontmatter.slug}`}
-					/>
-				</li>
-			))}
-		</ul>
+		<div className='flex flex-col gap-5'>
+			<h2 className='text-center'>Derniers posts</h2>
+			<ul className='flex flex-wrap justify-center gap-10'>
+				{allMarkdownRemark.edges.map((edge) => (
+					<li className='flex-1'>
+						<BlogCard
+							title={edge.node.frontmatter.title}
+							subtitle={edge.node.excerpt}
+							date={edge.node.frontmatter.date}
+							image={edge.node.frontmatter.image}
+							link={`blog/${edge.node.frontmatter.slug}`}
+						/>
+					</li>
+				))}
+			</ul>
+		</div>
 	</Layout>
 )
 

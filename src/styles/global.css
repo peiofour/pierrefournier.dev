@@ -16,18 +16,39 @@
 }
 
 @font-face {
-	font-family: "Circular Std";
+	font-family: 'Circular Std';
 	font-weight: 500;
 	font-style: normal;
-	src: url("/fonts/Circular_Std_Medium.woff2") format("woff2");
+	src: url('/fonts/Circular_Std_Medium.woff2') format('woff2');
 }
 
 @layer base {
-  html {
-    font-family: "Circular Std", sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+	html {
+		font-family: 'Circular Std', sans-serif;
+		font-size: 16px;
+		line-height: 1.5;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	code {
+		@apply text-[#ff1e56];
+	}
+
+	deckgo-highlight-code {
+		@apply text-[10px] lg:text-sm
+	}
+}
+
+@layer components {
+	.post {
+		@apply flex flex-col gap-5 max-w-4xl;
+	}
+	.post img {
+		@apply relative w-screen max-w-none md:rounded-xl -mx-4 md:max-w-2xl md:block;
+	}
+	.post ul {
+		@apply list-disc pl-5;
+	}
+
 }
