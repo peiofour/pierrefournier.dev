@@ -1,6 +1,5 @@
 import React from 'react'
 import { navigate } from 'gatsby'
-import { Card } from 'react-bootstrap'
 
 interface BlogCardProps {
 	link: string
@@ -17,16 +16,27 @@ const BlogCard = ({ link, title, subtitle, image, date }: BlogCardProps) => {
 		day: 'numeric',
 	})
 	return (
-		<Card className='card my-3 mx-auto' onClick={() => navigate(link)}>
-			<Card.Img src={image} alt={title} height={200} variant='top' />
-			<Card.Body className='mt-0 pt-0'>
-				<Card.Title className='mt-3 mb-0'>{title}</Card.Title>
-				<Card.Subtitle className='mt-2'>{dateLocale}</Card.Subtitle>
-				<Card.Text className='card-text'>
-					<div dangerouslySetInnerHTML={{ __html: subtitle }} />
-				</Card.Text>
-			</Card.Body>
-		</Card>
+		<div
+			className='max-w-xs border-solid border-[1px] border-[#00000014] shadow-md rounded-xl my-3 mx-auto cursor-pointer w-[300px] h-[500px]'
+			onClick={() => navigate(link)}
+		>
+			<img
+				className='rounded-t-xl h-[200px] object-cover'
+				src={image}
+				alt={title}
+				height={200}
+			/>
+			<div className='px-4 py-3 gap-4 flex flex-col'>
+				<div>
+					<h2 className='text-xl font-bold'>{title}</h2>
+					<h6 className='text-base font-medium'>{dateLocale}</h6>
+				</div>
+				<p
+					className='text-[18px] '
+					dangerouslySetInnerHTML={{ __html: subtitle }}
+				/>
+			</div>
+		</div>
 	)
 }
 

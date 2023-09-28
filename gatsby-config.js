@@ -24,6 +24,7 @@ module.exports = {
 				icon: `src/images/icon.png`,
 			},
 		},
+		'gatsby-plugin-postcss',
 		'gatsby-plugin-sass',
 		'gatsby-plugin-image',
 		'gatsby-plugin-sharp',
@@ -49,7 +50,7 @@ module.exports = {
 				gtagConfig: {
 					//   optimize_id: "OPT_CONTAINER_ID",
 					anonymize_ip: true,
-					//   cookie_expires: 0,
+					cookie_expires: 0,
 				},
 				// This object is used for configuration specific to this plugin
 				pluginConfig: {
