@@ -18,14 +18,24 @@ const Layout = ({ children, className }: LayoutProps) => {
 		window.scrollTo(0, 0)
 	}, [children])
 
-	// on children change, add smooth transition to container class
+	// on page loading, set opacity to 1 and translate-y to 0
 	useEffect(() => {
-		const container = document.getElementById('layout')
-		if (container) {
-			container.classList.replace('translate-y-12', 'translate-y-0')
-			container.classList.replace('opacity-0', 'opacity-100')
+		const layout = document.getElementById('layout')
+		if (layout) {
+			layout.style.opacity = '1'
+			layout.style.transform = 'translateY(0)'
+		}
+	}, [])
+
+	// on navigation, set opacity to 0 and translate-y to 12
+	useEffect(() => {
+		const layout = document.getElementById('layout')
+		if (layout) {
+			layout.style.opacity = '0'
+			layout.style.transform = 'translateY(12px)'
 		}
 	}, [children])
+	
 
 	return (
 		<div className='min-h-screen flex flex-col relative bg-[#edf6f9] text-[#333]'>

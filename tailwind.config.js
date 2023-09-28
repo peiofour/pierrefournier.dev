@@ -17,6 +17,7 @@ module.exports = {
 				'primary-dark': '#e6e6e6',
 				'primary': '#333',
 				'background': '#edf6f9',
+				'background-p-transparent': '#edf6f9a1',
 				'background-dark': '#082032',
 				'button': '#ff1e56',
 				'button-hover': '#ff1e56a1',
