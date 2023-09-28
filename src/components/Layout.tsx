@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import '../assets/scss/style.scss'
 import '../styles/global.css'
 
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
