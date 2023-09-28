@@ -113,22 +113,22 @@ const IndexPage = ({ data: { allMarkdownRemark } }: IndexPageProps) => (
 				</div>
 
 				<div className='flex gap-3 text-3xl py-6 justify-center lg:justify-start '>
-					<Link
-						to='https://www.linkedin.com/in/pierrefournier1'
+					<a
+						href='https://www.linkedin.com/in/pierrefournier1'
 						target='_blank'
 						className='hover:text-[#ff1e56a1] transition-all duration-300 ease-in-out'
 					>
 						<RiLinkedinFill className='svg_icon' />
-					</Link>
-					<Link
-						to='https://github.com/peiofour'
+					</a>
+					<a
+						href='https://github.com/peiofour'
 						target='_blank'
 						className='hover:text-[#ff1e56a1] transition-all duration-300 ease-in-out'
 					>
 						<RiGithubFill className='svg_icon' />
-					</Link>
-					<Link
-						to='https://www.malt.fr/profile/pierrefournier2'
+					</a>
+					<a
+						href='https://www.malt.fr/profile/pierrefournier2'
 						target='_blank'
 						className='hover:text-[#ff1e56a1] transition-all duration-300 ease-in-out'
 					>
@@ -137,7 +137,6 @@ const IndexPage = ({ data: { allMarkdownRemark } }: IndexPageProps) => (
 							fill='currentColor'
 							className='svg_icon'
 							viewBox='0 0 40 40'
-							stroke-width='0'
 							width='1em'
 							height='1em'
 							xmlns='http://www.w3.org/2000/svg'
@@ -157,7 +156,7 @@ const IndexPage = ({ data: { allMarkdownRemark } }: IndexPageProps) => (
 								</g>
 							</g>
 						</svg>
-					</Link>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -165,8 +164,8 @@ const IndexPage = ({ data: { allMarkdownRemark } }: IndexPageProps) => (
 		<div className='flex flex-col gap-5'>
 			<h2 className='text-center'>Derniers posts</h2>
 			<ul className='flex flex-wrap justify-center gap-10'>
-				{allMarkdownRemark.edges.map((edge) => (
-					<li className='flex-1'>
+				{allMarkdownRemark.edges.map((edge, index) => (
+					<li className='flex-1' key={index}>
 						<BlogCard
 							title={edge.node.frontmatter.title}
 							subtitle={edge.node.excerpt}

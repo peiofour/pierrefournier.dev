@@ -12,6 +12,14 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				'sans': ['Circular Std', 'sans-serif'],
+			},
+			colors: {
+				'primary-dark': '#e6e6e6',
+				'primary': '#333',
+				'background': '#edf6f9',
+				'background-dark': '#082032',
+				'button': '#ff1e56',
+				'button-hover': '#ff1e56a1',
 			}
 		},
 	},
