@@ -28,13 +28,6 @@ const Layout = ({ children, className }: LayoutProps) => {
 	}, [])
 
 	// on navigation, set opacity to 0 and translate-y to 12
-	useEffect(() => {
-		const layout = document.getElementById('layout')
-		if (layout) {
-			layout.style.opacity = '0'
-			layout.style.transform = 'translateY(12px)'
-		}
-	}, [children])
 	
 
 	return (
