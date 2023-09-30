@@ -34,7 +34,7 @@ module.exports = {
 				'h5': { fontSize: theme('fontSize.lg'), fontWeight: theme('fontWeight.medium') },
 				'h6': { fontSize: theme('fontSize.lg'), fontWeight: theme('fontWeight.normal') },
 				'p': { fontSize: theme('fontSize.xl'), fontWeight: theme('fontWeight.normal') },
-				'em': { fontSize: theme('fontSize.sm'), fontStyle: 'italic', fontWeight: theme('fontWeight.normal') },
+				'em': { fontSize: theme('fontSize.base'), fontStyle: 'italic', fontWeight: theme('fontWeight.normal') },
 			})
 		})
 	],
