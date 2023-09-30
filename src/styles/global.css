@@ -5,20 +5,26 @@
 	font-family: 'Circular Std';
 	src: url('/fonts/Circular_Std_Bold.woff2') format('woff2');
 	font-weight: 600;
+	font-display: swap;
 	font-style: normal;
+	font-named-instance: 'Regular';
 }
 
 @font-face {
 	font-family: 'Circular Std';
 	src: url('/fonts/Circular_Std_Book.woff2') format('woff2');
 	font-weight: 400;
+	font-display: swap;
 	font-style: normal;
+	font-named-instance: 'Regular';
 }
 
 @font-face {
 	font-family: 'Circular Std';
 	font-weight: 500;
+	font-display: swap;
 	font-style: normal;
+	font-named-instance: 'Regular';
 	src: url('/fonts/Circular_Std_Medium.woff2') format('woff2');
 }
 
@@ -29,6 +35,7 @@
 		line-height: 1.5;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
+		@apply bg-background;
 	}
 
 	code {
@@ -45,7 +52,7 @@
 		@apply flex flex-col gap-5 max-w-4xl;
 	}
 	.post img {
-		@apply relative w-screen max-w-none md:rounded-xl -mx-4 md:max-w-2xl md:block;
+		@apply relative w-screen max-w-none md:rounded-xl -mx-4 md:mx-0 md:max-w-2xl md:block;
 	}
 	.post ul {
 		@apply list-disc pl-5;

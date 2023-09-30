@@ -33,7 +33,7 @@ const Layout = ({ children, className }: LayoutProps) => {
 		<div className='min-h-screen flex flex-col relative bg-[#edf6f9] text-[#333]'>
 			<Header />
 			<main
-				className={`px-4 self-center max-w-7xl pt-4 pb-20 h-full block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out ${className}`}
+				className={`px-4 self-center max-w-7x pb-32 h-full block duration-700 relative transform opacity-0 transition-all translate-y-12 ease-out ${className}`}
 				id='layout'
 			>
 				{children}

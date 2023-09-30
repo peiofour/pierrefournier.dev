@@ -19,7 +19,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
 			crossOrigin='anonymous'
 		/>,
 		<link
-			key={`circular-std-medium`}
+			key='circular-std-medium'
 			rel='preload'
 			href='/fonts/Circular_Std_Medium.woff2'
 			as='font'
